@@ -59,7 +59,7 @@ h6 {
 }
 
 h1 {
-	font-size: 72px;  
+	font-size: 60px;  
 	background: -webkit-linear-gradient(left, #65ce2c 0%, #39b14a 70%, #39b14a 70%, #39b14a 100%);
 	background: linear-gradient(to right, #65ce2c 0%, #39b14a 70%, #39b14a 70%, #39b14a 100%);
 	-webkit-background-clip: text;  
@@ -67,7 +67,7 @@ h1 {
 }
 
 h2 {
-	font-size: 50px; 
+	font-size: 40px; 
 }
 
 .degradado {
@@ -509,6 +509,17 @@ ol {
 	line-height: 1.2;
 }
 
+.imagen{
+	display: inline-block;
+	vertical-align: middle;
+	width: 50px;
+}
+
+.imagen img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
 /*---------------------
 	Process Section
 -----------------------*/
@@ -838,7 +849,7 @@ ol {
 	border-radius: 0px 50px 50px 0px;
 	min-width: 140px;
 	background: #fff;
-	color: #20509e;
+	color: #39b14a;
 	font-size: 14px;
 	font-weight: 600;
 	cursor: pointer;
@@ -1899,9 +1910,9 @@ ol {
 }
   
   /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
-
-  }
+/*   .sticky + .content {
+	padding-top: 60px;
+  } */
   
 /*------------------
 	DIV CENTRADO

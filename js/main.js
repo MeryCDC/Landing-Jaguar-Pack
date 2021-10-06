@@ -96,7 +96,7 @@ $(document).ready(function(){
     var previousScroll = 0;
     $(window).scroll(function(event){
        var scroll = $(this).scrollTop();
-       if (scroll > previousScroll && scroll > 100){
+       if (scroll > 0){
            $cabecera.addClass('sticky');
 		   $imagen.removeClass('logo');
 		   $imagen.addClass('logosticky');

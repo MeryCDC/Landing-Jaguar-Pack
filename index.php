@@ -114,7 +114,7 @@
             <div class="row">
                 <!-- feature -->
                 <div class="col-md-12 col-lg-12 feature">
-                    <i class="ti-mobile"></i>
+                    <i class="imagen"> <img src="img/garras.png" alt=""></i>
                     <div class="feature-content">
                         <h4>Servicio de $200 MXN <br>Ampara hasta 3 lbs. <br>Artículos menores a un valor de $100 USD
                         </h4>
@@ -122,21 +122,21 @@
                 </div>
                 <!-- feature -->
                 <div class="col-md-12 col-lg-12 feature">
-                    <i class="ti-shield"></i>
+                    <i class="imagen"> <img src="img/garras.png" alt=""></i>
                     <div class="feature-content">
                         <h4>Artículos mayores de 3 lbs, <br>se cobra un excedente de $75 MXN x libra.</h4>
                     </div>
                 </div>
                 <!-- feature -->
                 <div class="col-md-12 col-lg-12 feature">
-                    <i class="ti-wallet"></i>
+                    <i class="imagen"> <img src="img/garras.png" alt=""></i>
                     <div class="feature-content">
                         <h4>Artículos con un valor mayor a $100 USD,<br>se cobra un interés del 16%.</h4>
                     </div>
                 </div>
                 <!-- feature -->
                 <div class="col-md-12 col-lg-12 feature">
-                    <i class="ti-headphone-alt"></i>
+                    <i class="imagen"> <img src="img/garras.png" alt=""></i>
                     <div class="feature-content">
                         <h4>Un seguro del 5% del valor <br>asegurado.</h4>
                     </div>
@@ -254,13 +254,13 @@
         <div class="container text-white">
             <div class="row">
                 <div class="col-lg-7 newsletter-text">
-                    <h2>Subscribete a nuestro boletín</h2>
+                    <h2>Suscríbete  a nuestro boletín</h2>
                     <p>Recibe noticias y nuevas ofertas continuamente.</p>
                 </div>
                 <div class="col-lg-5 col-md-8 offset-lg-0 offset-md-2">
                     <form class="newsletter-form">
-                        <input type="text" placeholder="Enter your email">
-                        <button>Get Started</button>
+                        <input type="text" placeholder="Ingresa tu correo">
+                        <button>Suscríbete </button>
                     </form>
                 </div>
             </div>
