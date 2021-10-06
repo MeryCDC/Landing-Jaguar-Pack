@@ -188,7 +188,7 @@
 	<section class="process-section spad">
 		<div class="container">
 			<div class="section-title text-center">
-				<h2>¿Cómo funciona <br> nuestro servicio?</h2>
+				<h2>¿Cómo funciona nuestro servicio?</h2>
 			</div>
 			<div class="row">
 				<div class="col-md-4 process">
