@@ -92,13 +92,21 @@ $(window).on('load', function() {
 
 $(document).ready(function(){
     var $cabecera = $('#menu');
+	var $imagen = $('#logo');
     var previousScroll = 0;
     $(window).scroll(function(event){
        var scroll = $(this).scrollTop();
        if (scroll > previousScroll && scroll > 100){
            $cabecera.addClass('sticky');
+		   $imagen.removeClass('logo');
+		   $imagen.addClass('logosticky');
+		   $("#logotipo").attr("src","img/logo-blanco.png");
+
        } else {
            $cabecera.removeClass('sticky');
+		   $imagen.removeClass('logosticky');
+		   $imagen.addClass('logo');
+		   $("#logotipo").attr("src","img/logo2.png");
        }
        previousScroll = scroll;    });
  

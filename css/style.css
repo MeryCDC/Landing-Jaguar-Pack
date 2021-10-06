@@ -38,7 +38,6 @@
     font-display: swap;
 }
 
-
 html,
 body {
 	height: 100%;
@@ -60,25 +59,41 @@ h6 {
 }
 
 h1 {
-	color: #3aaf0c;
-	font-size: 70px;
+	font-size: 72px;  
+	background: -webkit-linear-gradient(left, #65ce2c 0%, #39b14a 70%, #39b14a 70%, #39b14a 100%);
+	background: linear-gradient(to right, #65ce2c 0%, #39b14a 70%, #39b14a 70%, #39b14a 100%);
+	-webkit-background-clip: text;  
+	-webkit-text-fill-color: transparent;  
 }
 
 h2 {
-	color: #3aaf0c;
-	font-size: 50px;
+	font-size: 50px; 
+}
+
+.degradado {
+	background: -webkit-linear-gradient(left, #65ce2c 0%, #39b14a 70%, #39b14a 70%, #39b14a 100%);
+	background: linear-gradient(to right, #65ce2c 0%, #39b14a 70%, #39b14a 70%, #39b14a 100%);
+	-webkit-background-clip: text;  
+	-webkit-text-fill-color: transparent; 
 }
 
 h3 {
-	font-size: 30px;
+	font-size: 35px;
+	font-family: 'Centrale Sans', sans-serif;
+	font-weight: normal; 
+	font-style: normal;
 }
 
 h4 {
-	font-size: 24px;
+	font-size: 30px;
+	font-family: 'Centrale Sans', sans-serif;
+	font-weight: normal; 
+	font-style: normal;
 }
 
 h5 {
 	font-size: 20px;
+	color: #39b14a;
 }
 
 h6 {
@@ -93,6 +108,10 @@ p {
 
 img {
 	max-width: 100%;
+}
+
+span {
+	color: #39b14a;
 }
 
 input:focus,
@@ -170,7 +189,7 @@ ol {
 	font-family: "Futura", sans-serif;
 	min-width: 170px;
 	text-align: center;
-	border: 2px solid #7ad4cc;
+	border: 2px solid #ffffff;
 	cursor: pointer;
 	color: #fff;
 }
@@ -196,7 +215,7 @@ ol {
 }
 
 .site-btn.sb-gradients.sbg-line {
-	color: #20509e;
+	color: #39b14a;
 	z-index: 1;
 }
 
@@ -225,8 +244,8 @@ ol {
 	/* FF3.6-15 */
 	/* Chrome10-25,Safari5.1-6 */
 	background: -webkit-gradient(linear, left top, right top, from(#3e2bce), color-stop(100%, #2dd3aa), color-stop(100%, #2dd3aa), to(#2dd3aa));
-	background: -o-linear-gradient(left, #3e2bce 0%, #2dd3aa 100%, #2dd3aa 100%, #2dd3aa 100%);
-	background: linear-gradient(to right, #3e2bce 0%, #2dd3aa 100%, #2dd3aa 100%, #2dd3aa 100%);
+	background: -o-linear-gradient(left, #65ce2c 0%, #39b14a 70%, #39b14a 70%, #39b14a 100%);
+	background: linear-gradient(to right, #65ce2c 0%, #39b14a 70%, #39b14a 70%, #39b14a 100%);
 	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3e2bce', endColorstr='#2dd3aa', GradientType=1);
 	/* IE6-9 */
@@ -327,6 +346,17 @@ ol {
 	padding: 20px 50px 20px;
 	z-index: 99;
 }
+.logo{
+	display: inline-block;
+	vertical-align: middle;
+	width: 270px;
+}
+
+.logo img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
 
 .header-section .site-btn {
 	float: right;
@@ -367,7 +397,7 @@ ol {
 	height: 900px;
 	padding-top: 260px;
 	display: block;
-	background-image: url("../img/hero-bg.png");
+	background-image: url("../img/hero.png");
 	background-size: cover;
 	background-color: #f3f7f9;
 	background-position: right top;
@@ -535,10 +565,11 @@ ol {
 
 .fact h2 {
 	float: left;
-	color: #16d0c5;
+	color: #ffffff;
 	font-size: 60px;
 	margin-right: 20px;
 }
+
 
 .fact p {
 	float: left;
@@ -899,7 +930,7 @@ ol {
 -----------------------*/
 
 .footer-widget span {
-	color: #acb9cc;
+	color: #39b14a;
 }
 
 .footer-widget p {
@@ -943,7 +974,7 @@ ol {
 }
 
 .social .facebook {
-	background: #4b6cd0;
+	background: #39b14a;
 }
 
 .social .google {
@@ -951,7 +982,7 @@ ol {
 }
 
 .social .instagram {
-	background: #bb8950;
+	background: #39b14a;
 }
 
 .social .twitter {
@@ -1853,10 +1884,33 @@ ol {
 	top: 0;
 	width: 100%;
 	background-color: #333;
+}
 
-  }
+.logosticky {
+	display: inline-block;
+	vertical-align: middle;
+	width: 150px;
+}
+
+.logosticky img{
+	display: block;
+	width: 100%;
+	height: auto;
+}
   
   /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
   .sticky + .content {
 
+  }
+  
+/*------------------
+	DIV CENTRADO
+---------------------*/
+  .padre {
+	display: flex;
+	justify-content: center;
+  }
+  .hijo {
+	padding: 10px;
+	margin: 10px;
   }
