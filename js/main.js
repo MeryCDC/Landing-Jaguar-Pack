@@ -90,3 +90,16 @@ $(window).on('load', function() {
 
 })(jQuery);
 
+$(document).ready(function(){
+    var $cabecera = $('#menu');
+    var previousScroll = 0;
+    $(window).scroll(function(event){
+       var scroll = $(this).scrollTop();
+       if (scroll > previousScroll && scroll > 100){
+           $cabecera.addClass('sticky');
+       } else {
+           $cabecera.removeClass('sticky');
+       }
+       previousScroll = scroll;    });
+ 
+  });
