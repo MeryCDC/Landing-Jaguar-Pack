@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="description" content="Jaguarpack Compras express">
     <meta name="keywords" content="Compras express, entregas, rapido">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="shortcut icon" />
 
@@ -30,11 +30,6 @@
 </head>
 
 <body>
-    <!-- Page Preloder -->
-    <div id="preloder">
-        <div class="loader"></div>
-    </div>
-
     <!-- Header section -->
     <header class="header-section clearfix" id="menu">
         <div class="container-fluid">
@@ -73,9 +68,9 @@
                         <button class="site-btn sb-gradients">Buscar</button>
                     </form>
                 </div>
-                <!-- <div class="col-md-6">
-					<img src="img/laptop.png" class="laptop-image" alt="">
-				</div> -->
+                <div class="col-md-6">
+				<!-- 	<img src="img/laptop.png" class="laptop-image" alt=""> -->
+				</div> 
             </div>
         </div>
     </section>
@@ -113,32 +108,31 @@
             </div>
             <div class="row">
                 <!-- feature -->
-                <div class="col-md-12 col-lg-12 feature">
+                <div class="col-md-6 col-lg-12 feature">
                     <i class="imagen"> <img src="img/garras.png" alt=""></i>
-                    <div class="feature-content">
-                        <h4>Servicio de $200 MXN <br>Ampara hasta 3 lbs. <br>Artículos menores a un valor de $100 USD
-                        </h4>
+                    <div class="col-md-2 col-lg-6 feature-content">
+                        <h4>Servicio de $200 MXN. <br> Ampara hasta 3 lbs. Artículos menores a un valor de $100 USD</h4>
                     </div>
                 </div>
                 <!-- feature -->
-                <div class="col-md-12 col-lg-12 feature">
+                <div class="col-md-6 col-lg-12 feature">
                     <i class="imagen"> <img src="img/garras.png" alt=""></i>
-                    <div class="feature-content">
-                        <h4>Artículos mayores de 3 lbs, <br>se cobra un excedente de $75 MXN x libra.</h4>
+                    <div class="col-md-2 col-lg-6 feature-content">
+                        <h4>Artículos mayores de 3 lbs, se cobra un excedente de $75 MXN x libra.</h4>
                     </div>
                 </div>
                 <!-- feature -->
-                <div class="col-md-12 col-lg-12 feature">
+                <div class="col-md-6 col-lg-12 feature">
                     <i class="imagen"> <img src="img/garras.png" alt=""></i>
-                    <div class="feature-content">
-                        <h4>Artículos con un valor mayor a $100 USD,<br>se cobra un interés del 16%.</h4>
+                    <div class="col-md-2 col-lg-6 feature-content">
+                        <h4>Artículos con un valor mayor a $100 USD, se cobra un interés del 16%.</h4>
                     </div>
                 </div>
                 <!-- feature -->
-                <div class="col-md-12 col-lg-12 feature">
+                <div class="col-md-6 col-lg-12 feature">
                     <i class="imagen"> <img src="img/garras.png" alt=""></i>
-                    <div class="feature-content">
-                        <h4>Un seguro del 5% del valor <br>asegurado.</h4>
+                    <div class="col-md-2 col-lg-6 feature-content">
+                        <h4>Un seguro del 5% del valor asegurado.</h4>
                     </div>
                 </div>
 
@@ -204,7 +198,6 @@
         </div>
     </section>
     <!-- Process section end -->
-
 
     <!-- Fact section -->
     <section class="fact-section gradient-bg">
