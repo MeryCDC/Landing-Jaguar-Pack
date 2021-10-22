@@ -26,9 +26,11 @@
 <script src="assets/bootstrap4/js/bootstrap.min.js"></script>
 <script src="assets/codigo.js"></script>
 <script>
-    	$('.responsive-bar').on('click', function(event) {
-		$('.main-menu').slideToggle(400);
-		event.preventDefault();
-	});
+$('.responsive-bar-sistema').on('click', function(event) {
+    $('.main-menu').slideToggle(400);
+    event.preventDefault();
+});
+
+$("a[data-toggle='tooltip']").tooltip();
 </script>
 </body>

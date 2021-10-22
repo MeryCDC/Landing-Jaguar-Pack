@@ -5,23 +5,21 @@
 <section class="about-section spad">
     <div class="container">
         <div class="alert alert-success" role="alert">
-            <h4 class="alert-heading">Se te envió un Correo Electrónico </h4>
-            <p>
-                Hola, Por favor revisa tu Correo Electrónico para poder validar que el correo electrónico que
-                ingresaste existe.
-                <br>
-                Favor de seguir los siguientes pasos:
+            <h4 class="alert-heading">Se te envió un Correo Electrónico</h4>
+            <p>Hola, Por favor revisa tu Correo Electrónico para poder restablecer tu Contraseña.
+                <br>Favor de seguir los siguientes pasos:
             <ol>
                 <li>Abre tu Correo Electrónico</li>
                 <li>Haz clic en el enlace</li>
                 <li>Ingresa tu código de autenticación que te enviamos</li>
                 <li>Ingresalo en la ventana que te llevará el enlace</li>
-                <li>Y listo, ahora puedes Iniciar Sesión en Control de Compras</li>
+                <li>Y listo, ahora puedes actualizar tu contraseña e Iniciar Sesión</li>
             </ol>
             </p>
             <hr>
         </div>
     </div>
+
 </section>
 <footer class="footer text-center text-white">
     <div class="container">

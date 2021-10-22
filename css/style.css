@@ -372,6 +372,11 @@ ol {
 	display: none;
 }
 
+.header-section .responsive-bar-sistema,
+.header-section .user {
+	display: none;
+}
+
 .main-menu {
 	float: right;
 }
@@ -1729,7 +1734,7 @@ ol {
 		margin-bottom: 30px;
 	}
 	.newsletter-section {
-		text-align: center;
+		text-align: center; 
 	}
 }
 
@@ -1745,8 +1750,15 @@ ol {
 		font-size: 25px;
 		display: block;
 		cursor: pointer;
+	}
+	.header-section .responsive-bar-sistema {
+		float: right;
+		font-size: 25px;
+		display: block;
+		cursor: pointer;
 		color: #fff;
 	}
+
 	.header-section .user {
 		float: right;
 		font-size: 25px;
@@ -1760,12 +1772,16 @@ ol {
 		width: 100%;
 		left: 0;
 		top: 100%;
-		background: #333;
+		background: #fff;
 		padding: 0 15px;
 		display: none;
 		-webkit-box-shadow: 0 14px 43px rgba(33, 54, 61, 0.15);
 		        box-shadow: 0 14px 43px rgba(33, 54, 61, 0.15);
 	}
+	.sistema{
+		background: #333;
+	}
+
 	.menu-list {
 		list-style: none;
 	}

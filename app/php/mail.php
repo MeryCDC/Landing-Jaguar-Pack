@@ -16,8 +16,8 @@ $mensaje = '
     <meta charset="UTF-8">
 </head>
 <body>
-  <h2> Hola '. $name .', ya esta casi lista tu cuenta en Control de Compras.</h2>
-  <p>Tu Codigo de Seguridad para Autenticarte en Control de Compras es:</p>
+  <h2> Hola '. $name .', ya esta casi lista tu cuenta en Jaguarpack.</h2>
+  <p>Tu Codigo de Seguridad para Autenticarte en Jaguarpack es:</p>
   <p>
     <a
     href="https://www.jaguarpack.com/app/confirm.php?email='.$email.'">
@@ -34,7 +34,7 @@ $mensaje = '
   
   <hr>
     
-    <h3> Proceso a seguir para hacer uso de Control de Compras </h3>
+    <h3> Proceso a seguir para hacer uso de Jaguarpack </h3>
 
     <ol>
         <li> Regístrate en nuestro casillero virtual. </li>
@@ -43,7 +43,7 @@ $mensaje = '
 
         <li> Tu paquete llegará a nuestra bodega en Laredo Tx. Nosotros nos comunicaremos contigo. </li>
         <li> Realiza el pago por el servicio de envío, el cual te facilitaremos los datos. </li>
-        <li> Enviaremos a tu domicilio tus artículos, mediante diferentes paqueterías.  </li>
+        <li> Enviaremos a tu domicilio tus artículos. </li>
 
         <li> Rastrea tu paquete con los un numero de guía que te asignaremos. </li>
         <li> Recibe tu paquete en tu hogar en México. </li>
@@ -58,7 +58,7 @@ $mensaje = '
 // Para enviar un correo HTML, debe establecerse la cabecera Content-type
 $cabeceras  = 'MIME-Version: 1.0' . "\r\n";
 //$cabeceras .= 'From: Recordatorio <Papercut@user.com>' . "\r\n";
-$cabeceras .= 'From: Recordatorio <info@controldecarga.com.mx>' . "\r\n";               // PRODUCCIÓN
+$cabeceras .= 'From: Registro <info@jaguarpack.com>' . "\r\n";               // PRODUCCIÓN
 $cabeceras .= 'Content-type: text/html; charset=UTF-8$LE' . "\r\n";
 
 // Cabeceras adicionales

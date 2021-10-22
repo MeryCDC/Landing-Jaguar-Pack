@@ -24,7 +24,7 @@
 <?php require_once "layout/header.php" ?>
 
 <section class="about-section spansistema">
-<div class="container">
+    <div class="container">
         <div class="row">
             <div class="col-lg-12">
                 <div class="card border-success p-3 mb-5 bg-white ">
@@ -34,7 +34,7 @@
                             <div class="col">
                                 <div class="card-body text-justify">
 
-                                                                    <table class="table table-bordered table-responsive-sm text-center">
+                                    <table class="table table-bordered table-responsive-sm text-center">
                                         <thead>
                                             <tr>
                                                 <th scope="col">ID</th>
@@ -72,7 +72,7 @@
                                             <?php } ?>
                                         </tbody>
                                     </table>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -86,12 +86,6 @@
             </div>
         </div>
     </div>
-
 </section>
 
-    <script src="assets/jquery/jquery-3.3.1.min.js"></script>
-    <script src="assets/popper/popper.min.js"></script>
-    <script src="assets/bootstrap4/js/bootstrap.min.js"></script>
-    <script src="assets/codigo.js"></script>
-</body>
-</html>
+<?php require_once "layout/footer.php" ?>

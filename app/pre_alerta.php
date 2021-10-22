@@ -142,11 +142,5 @@
     </div>
 </section>
 
-<script src="assets/jquery/jquery-3.3.1.min.js"></script>
-    <script src="assets/popper/popper.min.js"></script>
-    <script src="assets/bootstrap4/js/bootstrap.min.js"></script>
-    <script src="assets/codigo.js"></script>
-</body>
-</html>
-
+<?php require_once "layout/footer.php" ?>
 

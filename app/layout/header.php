@@ -25,8 +25,7 @@
             <a href="home.php" class="logosticky" id="logo">
                 <img src="../img/logo-blanco.png" alt="" id="logotipo">
             </a>
-            <div class="responsive-bar"><i class="fa fa-bars"></i></div>
-            <a href="" class="user"><i class="fa fa-user"></i></a>
+            <div class="responsive-bar-sistema"><i class="fa fa-bars"></i></div>
             <nav class="main-menu">
                 <ul class="menu-sistema">
                     <li class="nav-item dropdown">

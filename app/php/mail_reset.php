@@ -2,10 +2,8 @@
 require_once("registrar.php");
 // Varios destinatarios
 $para  = $email . ' '; // Para el correo que se está registrando en la base de datos
-
 // título
 $título = 'Restablecer Contraseña para Control de Compras';
-
 //Código aleatorio
 $codigo_auth = rand(1000,9999);
 
@@ -17,7 +15,7 @@ $mensaje = '
     <title> Restablecer </title>
 </head>
 <body>
-  <h2> Hola, para restablecer tu contraseña en Control de Compras es necesario lo siguiente:</h2>
+  <h2> Hola, para restablecer tu contraseña en Jaguarpack es necesario lo siguiente:</h2>
 
   <p>Tu Codigo para Restablecer tu Contraseña es: </p>
 
@@ -48,7 +46,7 @@ $mensaje = '
 // Para enviar un correo HTML, debe establecerse la cabecera Content-type
 $cabeceras  = 'MIME-Version: 1.0' . "\r\n";
 //$cabeceras .= 'From: Recordatorio <Papercut@user.com>' . "\r\n";
-$cabeceras .= 'From: Recordatorio <info@controldecarga.com.mx>' . "\r\n";               // PRODUCCIÓN
+$cabeceras .= 'From: Recordatorio <info@jaguarpack.com>' . "\r\n";               // PRODUCCIÓN
 $cabeceras .= 'Content-type: text/html; charset=UTF-8$LE' . "\r\n";
 
 // Cabeceras adicionales
@@ -61,10 +59,7 @@ $enviado = false;
 
 // Enviarlo
 if(mail($para, $título, $mensaje, $cabeceras)){
-    echo '
-    
-                      
-    <!DOCTYPE html>
+/*     echo '<!DOCTYPE html>
     <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -195,9 +190,8 @@ if(mail($para, $título, $mensaje, $cabeceras)){
         <!-- JavaScript Bundle with Popper -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     </body>
-    </html>    
-    
-    ';
+    </html> '; */
+    header("Location: ../restablecer_mensaje.php"); 
     $enviado = true;
 }
 else{

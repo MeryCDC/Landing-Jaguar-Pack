@@ -74,7 +74,7 @@
 					</div>
 
 					<div class="text-center p-t-12">
-						<a class="txt2" href="https://controldecompras.com.mx/compras/login/">
+						<a class="txt2" href="login.php">
 						Regresar al login
 						</a>
 					</div>

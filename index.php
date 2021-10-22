@@ -37,7 +37,7 @@
                 <img src="img/logo2.png" alt="" id="logotipo">
             </a>
             <div class="responsive-bar"><i class="fa fa-bars"></i></div>
-            <a href="" class="user"><i class="fa fa-user"></i></a>
+            <a href="app/login.php" class="user"><i class="fa fa-user"></i></a>
             <a href="app/login.php" class="site-btn">Iniciar Sesión</a>
             <nav class="main-menu">
                 <ul class="menu-list">
