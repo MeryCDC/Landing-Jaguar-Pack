@@ -26,7 +26,7 @@
                 <img src="../img/logo-blanco.png" alt="" id="logotipo">
             </a>
             <div class="responsive-bar-sistema"><i class="fa fa-bars"></i></div>
-            <nav class="main-menu">
+            <nav class="main-menu-sistema">
                 <ul class="menu-sistema">
                     <li class="nav-item dropdown">
                         <a class="dark nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"

@@ -10,11 +10,8 @@
                 </div>
                 <div class="col-lg-8 text-center text-lg-right">
                     <ul class="footer-nav">
-                        <!-- <li><a href="">DPA</a></li> -->
                         <li><a href="">Terminos y Uso</a></li>
-                        <!--                         <li><a href="">Privacy Policy </a></li>
-                        <li><a href="">support@company.com</a></li> -->
-                        <li><a href="">(123) 456-7890</a></li>
+                        <li><a href="tel:8677141102">(867)714-11-02</a></li>
                     </ul>
                 </div>
             </div>

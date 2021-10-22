@@ -160,7 +160,7 @@ echo '
                 <div class="col-md-6 mb-3">
                   <label for="apellido">Teléfono Secundario * </label>
                   <input type="text" class="form-control" id="txtTelefonoAuxiliar" name="txtTelefonoAuxiliar"
-                    placeholder="+52 (867) 124 8752" value="'. $telefono_aux_cliente .'" required>
+                    placeholder="+52 (867) 124 8752" value="'. $telefono_aux_cliente .'">
 
                   <div class="valid-feedback">¡Ok válido!</div>
                   <div class="invalid-feedback">No deje el campo "Teléfono Secundario" vacío.</div>
