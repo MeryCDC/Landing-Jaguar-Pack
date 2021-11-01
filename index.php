@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="description" content="Jaguarpack Compras express">
     <meta name="keywords" content="Compras express, entregas, rapido">
-     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="shortcut icon" />
 
@@ -56,20 +56,20 @@
     <!-- Inicio section -->
     <section class="hero-section" id="inicio">
         <div class="container">
-            <div class="row"> 
+            <div class="row">
                 <div class="col-md-6 hero-text">
                     <h1>Adquiere en E.U </h1>
                     <h2 class="degradado">Recibe en NLD y CDMX</h2>
                     <form class="hero-subscribe-from">
                         <!--  <h6>Rastrea tu pedido, con tu número de tracking original</h6> -->
                         <label for="">Rastrea tu pedido, con tu número de tracking original</label>
-                        <input type="text" placeholder="Rastrea tu pedido">
+                        <input type="text" placeholder="Temporalmente no disponible" readonly>
                         <button class="site-btn sb-gradients">Buscar</button>
                     </form>
                 </div>
                 <div class="col-md-6">
-				<!-- 	<img src="img/laptop.png" class="laptop-image" alt=""> -->
-				</div> 
+                    <!-- 	<img src="img/laptop.png" class="laptop-image" alt=""> -->
+                </div>
             </div>
         </div>
     </section>
@@ -82,13 +82,13 @@
             <div class="row">
                 <div class="col-lg-6 offset-lg-6 about-text">
                     <h2 class="degradado">Compras rapidas, entregas rapidas</h2>
-                    <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum euismod nisl ac convallis.
-                        Nulla eget mattis sem. Donec nec maximus leo. Donec efficitur lacus a urna auctor, Lorem ipsum
-                        dolor sit amet, consectetur adipiscing elit. Sed dictum euismod nisl ac convallis. Nulla eget
-                        mattis sem. Donec nec maximus leo. Donec efficitur lacus a urna auctor, Lorem ipsum dolor sit
-                        amet.</p>
-                    <a href="" class="site-btn sb-gradients sbg-line mt-5">Registrate</a>
+                    <!-- <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5> -->
+                    <p>Somos un servicio de almacenamiento y envío de compras a bajo costo, hacemos el puente para que
+                        puedas comprar
+                        tus productos en tiendas online en EU, enviar a tu dirección en EU, almacenarla y despacharla
+                        hasta tu hogar.</p>
+                    <a href="https://www.jaguarpack.com/app/registro.php"
+                        class="site-btn sb-gradients sbg-line mt-5">Registrate</a>
                 </div>
             </div>
             <div class="about-img">
@@ -138,50 +138,6 @@
             </div>
         </div>
     </section>
-    <!-- Features section end -->
-    <div> <br><br></div>
-
-    <!-- Features section -->
-    <!-- 	<section class="features-section spad gradient-bg">
-		<div class="container text-white">
-			<div class="section-title text-center">
-				<h2>Costos del servicio</h2>
-                <p>Version 2</p>
-			</div>
-			<div class="row"> -->
-    <!-- feature -->
-    <!-- <div class="col-md-12 col-lg-6 feature">
-					<i class="ti-mobile"></i>
-					<div class="feature-content">
-						<h4>Servicio de $200 MXN <br>Ampara hasta 3 lbs. <br>Artículos menores a un valor de $100 USD</h4>
-					</div>
-				</div> -->
-    <!-- feature -->
-    <!-- <div class="col-md-12 col-lg-6 feature">
-					<i class="ti-shield"></i>
-					<div class="feature-content">
-						<h4>Artículos mayores de 3 lbs, <br>se cobra un excedente de $75 MXN x libra.</h4>
-					</div>
-				</div> -->
-    <!-- feature -->
-    <!-- <div class="col-md-12 col-lg-6 feature">
-					<i class="ti-wallet"></i>
-					<div class="feature-content">
-						<h4>Artículos con un valor mayor a $100 USD,<br>se cobra un interés del 16%.</h4>
-					</div>
-				</div> -->
-    <!-- feature -->
-    <!-- 	<div class="col-md-12 col-lg-6 feature">
-					<i class="ti-headphone-alt"></i>
-					<div class="feature-content">
-						<h4>Un seguro del 5% del valor asegurado.</h4>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
-    <!-- Features section end -->
-
 
     <!-- Process section -->
     <section class="process-section spad">
@@ -189,14 +145,136 @@
             <div class="section-title text-center">
                 <h2 class="degradado">¿Cómo funciona nuestro servicio?</h2>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="row" style="display:flex;">
+                <div class="col-md-4 process">
+                    <div class="process-step">
+                        <figure class="process-icon">
+                            <img src="img\JP-INFO-1.png" alt="#">
+                        </figure>
+                        <h4>1. Regístrate en JaguarPack y obtén tu dirección en USA.</h4>
+                        <p>Esta será su dirección dentro de los Estados Unidos. <br> Tenerla no le generará tarifas ni
+                            cargos. <br><br></p>
+                    </div>
+                </div>
+                <div class="col-md-4 process">
+                    <div class="process-step">
+                        <figure class="process-icon">
+                            <img src="img\JP-INFO-2.png" alt="#">
+                        </figure>
+                        <h4>2. Compre en cualquier tienda de USA. Y envíela a su nueva dirección de USA.</h4>
+                        <p>Utilice la dirección que le proporcionamos para recibir sus compras en nuestra bodega en USA.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 process">
+                    <div class="process-step">
+                        <figure class="process-icon">
+                            <img src="img\JP-INFO-3.png" alt="#">
+                        </figure>
+                        <h4>3. Rastrea y recibe tu pedido.</h4>
+                        <p>Puedes rastrear tu pedido desde tu cuenta de JaguarPack, te dirá el último estatus de tu
+                            paquete. <br><br><br> </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Process section end -->
+
+    <!-- Blog section -->
+    <section class="blog-section spad">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2 class="degradado">¿Cómo funciona nuestro servicio?</h2>
+            </div>
+            <div class="row" style="display:flex;">
+                <!-- blog item -->
+                <div class="col-md-4 blog-div">
+                    <div class="blog-item">
+                        <figure class="blog-thumb">
+                            <img src="img\JP-INFO-1.png" alt="">
+                        </figure>
+
+                        <div class="blog-text">
+                            <h5 class="blog-title"> 1. Regístrate en JaguarPack y obtén tu dirección en USA.</h5>
+                            <p>Esta será su dirección dentro de los Estados Unidos. <br> Tenerla no le generará tarifas
+                                ni cargos. <br> <br></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- blog item -->
+                <div class="col-md-4 blog-div">
+                    <div class="blog-item">
+                        <figure class="blog-thumb">
+                            <img src="img\JP-INFO-2.png" alt="">
+                        </figure>
+                        <div class="blog-text">
+                            <!-- <div class="post-date">28 dec 2018</div> -->
+                            <h5 class="blog-title">2. Compre en cualquier tienda de USA. Y envíela a su nueva dirección
+                                de USA.</h5>
+                            <p>Utilice la dirección que le proporcionamos para recibir sus compras en nuestra bodega en
+                                USA.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- blog item -->
+                <div class="col-md-4 blog-div">
+                    <div class="blog-item">
+                        <figure class="blog-thumb">
+                            <img src="img\JP-INFO-3.png" alt="">
+                        </figure>
+                        <div class="blog-text">
+                            <!-- <div class="post-date">28 aug 2018</div> -->
+                            <h5 class="blog-title">3. Rastrea y recibe tu pedido.</h5>
+                            <p>Puedes rastrear tu pedido desde tu cuenta de JaguarPack, te dirá el último estatus de tu
+                                paquete. <br> <br> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog section end -->
+
+    <section class="process-section spad">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2 class="degradado">¿Cómo funciona nuestro servicio?</h2>
+            </div>
+            <div class="card-deck">
+                <div class="card">
+                    <img src="img\JP-INFO-1.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Regístrate en JaguarPack y obtén tu dirección en USA.</h5>
+                        <p class="card-text">Esta será su dirección dentro de los Estados Unidos. <br> Tenerla no le
+                            generará tarifas ni
+                            cargos.</p>
+
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img\JP-INFO-2.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Compre en cualquier tienda de USA. Y envíela a su nueva dirección de USA.
+                        </h5>
+                        <p class="card-text">Utilice la dirección que le proporcionamos para recibir sus compras en
+                            nuestra bodega en USA.</p>
+                        <!--                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="img\JP-INFO-3.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Rastrea y recibe tu pedido.</h5>
+                        <p class="card-text">Puedes rastrear tu pedido desde tu cuenta de JaguarPack, te dirá el último
+                            estatus de tu paquete.</p>
+                        <!--                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Fact section -->
     <section class="fact-section gradient-bg">
@@ -207,13 +285,13 @@
             <div class="row">
                 <div class="col-sm-12 col-md-12 col-lg-4">
                     <div class="fact">
-                        <h2>3000</h2>
+                        <h2>200</h2>
                         <p>clientes <br> Satisfechos</p>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-4">
                     <div class="fact">
-                        <h2>500</h2>
+                        <h2>400</h2>
                         <p>Paquetes <br> entregados <br> por semana</p>
                     </div>
                 </div>
@@ -246,7 +324,7 @@
         <div class="container text-white">
             <div class="row">
                 <div class="col-lg-7 newsletter-text">
-                    <h2>Suscríbete  a nuestro boletín</h2>
+                    <h2>Suscríbete a nuestro boletín</h2>
                     <p>Recibe noticias y nuevas ofertas continuamente.</p>
                 </div>
                 <div class="col-lg-5 col-md-8 offset-lg-0 offset-md-2">
@@ -265,45 +343,50 @@
         <div class="container">
             <div class="row spad">
                 <div class="col-md-6 col-lg-4 footer-widget">
-                    <img src="img/logo2.png" class="mb-4" alt="">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum euismod nisl ac convallis.
-                        Nulla eget mattis sem. Donec nec maximus leo. Donec efficitur lacus a urna auctor. </p>
+                    <img src="img/logo3.png" class="mb-4" alt="">
+                    <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum euismod nisl ac convallis.
+                        Nulla eget mattis sem. Donec nec maximus leo. Donec efficitur lacus a urna auctor. </p> -->
                 </div>
                 <div class="col-md-6 col-lg-3 offset-lg-1 footer-widget">
                     <h5 class="widget-title">Contacto</h5>
                     <ul>
-                        <li><a href="#">contacto@<span>jaguarpack</span>.com</a></li>
+                        <li><a href="mailto:contacto@jaguarpack.com"><b>Correo: </b>contacto@jaguarpack.com</a></li>
+                        <li><a href="tel:8677141102"><b>Teléfono: </b>867 714 1102</a></li>
+                        <li><a href="https://goo.gl/maps/Z33wVpzHs9b5e5f89"><b>Dirección: </b>Aldama 2103, Juárez, 88209
+                                Nuevo Laredo, Tamps.</span>.com</a></li>
                     </ul>
                 </div>
                 <div class="col-md-6 col-lg-4 footer-widget pl-lg-5 pl-3">
                     <h5 class="widget-title">Siguenos en redes sociales</h5>
                     <div class="social">
-                        <a href="" class="facebook"><i class="fa fa-facebook"></i></a>
-                        <a href="" class="instagram"><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/JaguarPack-109423444837073/" class="facebook"><i
+                                class="fa fa-facebook"></i></a>
+                        <!-- <a href="" class="instagram"><i class="fa fa-instagram"></i></a> -->
 
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <div class="row">
-                    <div class="col-lg-4 store-links text-center text-lg-left pb-3 pb-lg-0">
-                        <a href=""><img src="img/appstore.png" alt="" class="mr-2"></a>
-                        <a href=""><img src="img/playstore.png" alt=""></a>
+                    <div class="col-lg-8 store-links text-center text-lg-left pb-3 pb-lg-0">
+                        <a>Conoce nuestros otros servicios</a> <br>
+                        <a href="https://www.controldecarga.com/" target="_blank"><img src="img/LOGOCDC.png" alt=""
+                                width="50" height="50"></a>
+                        <a href="https://controldecompras.com.mx/" target="_blank"><img src="img/LOGOCOMPRAS.png" alt=""
+                                width="50" height="50"></a>
+                        <a href="https://www.rapicarga.mx/" target="_blank"><img src="img/LOGORAPI.png" alt=""
+                                width="50" height="50"></a>
                     </div>
-                    <div class="col-lg-8 text-center text-lg-right">
+                    <div class="col-lg-4 text-center text-lg-right">
                         <ul class="footer-nav">
-                            <li><a href="">DPA</a></li>
-                            <li><a href="">Terms of Use</a></li>
-                            <li><a href="">Privacy Policy </a></li>
-                            <li><a href="">support@company.com</a></li>
-                            <li><a href="">(123) 456-7890</a></li>
+                            <li><a href="">Términos de uso</a></li>
+                            <li><a href="">Política de privacidad</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-
 
     <!--====== Javascripts & Jquery ======-->
     <script src="js/jquery-3.2.1.min.js"></script>

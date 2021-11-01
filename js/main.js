@@ -93,6 +93,7 @@ $(window).on('load', function() {
 $(document).ready(function(){
     var $cabecera = $('#menu');
 	var $imagen = $('#logo');
+	var $responsive = $('#bar');
     var previousScroll = 0;
     $(window).scroll(function(event){
        var scroll = $(this).scrollTop();

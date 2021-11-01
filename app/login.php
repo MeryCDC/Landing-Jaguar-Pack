@@ -21,7 +21,7 @@
 
             <div class="wrap-login100">
                 <div class="login100-pic js-tilt" data-tilt>
-                    <img src="login/images/logo2.png" alt="IMG">
+                    <img src="login/images/logo3.png" alt="IMG">
                 </div>
 
                 <form class="login100-form validate-form" method="POST" action="php/login.php">

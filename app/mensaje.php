@@ -11,7 +11,7 @@
                 ingresaste existe.
                 <br>
                 Favor de seguir los siguientes pasos:
-            <ol>
+                <ol>
                 <li>Abre tu Correo Electrónico</li>
                 <li>Haz clic en el enlace</li>
                 <li>Ingresa tu código de autenticación que te enviamos</li>

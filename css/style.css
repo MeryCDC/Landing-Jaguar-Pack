@@ -576,7 +576,7 @@ ol {
 }
 
 .process-step .process-icon {
-	height: 55px;
+	/* height: 55px; */
 	margin-bottom: 30px;
 	padding-top: 5px;
 }
@@ -596,7 +596,6 @@ ol {
 	height: 56px;
 	top: -40px;
 	right: -40%;
-	background: url("../img/process-line.png") no-repeat scroll 0 0/cover;
 }
 
 /*---------------------
@@ -1751,6 +1750,8 @@ ol {
 		display: block;
 		cursor: pointer;
 	}
+
+	
 	.header-section .responsive-bar-sistema {
 		float: right;
 		font-size: 25px;
@@ -1994,7 +1995,7 @@ ol {
 	top: 0;
 	width: 100%;
 	background-color: #333;
-	
+	color:#fff;
 }
 
 .logosticky {
