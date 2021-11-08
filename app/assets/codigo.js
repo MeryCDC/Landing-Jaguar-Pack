@@ -25,7 +25,7 @@ function calcularPorcentajeSeguro() {
   var txtPorcentajeSeguro = document.getElementById("txtPorcentajeSeguro");
   var chkSeguro = document.getElementById('exampleCheck1').checked;
 
-  var porcentajeSeguro = 10;
+  var porcentajeSeguro = 5;
   var resultadoPorcentajeSeguro = (txtValor * porcentajeSeguro) / 100;
 
   if (chkSeguro) {
@@ -35,26 +35,12 @@ function calcularPorcentajeSeguro() {
       //Si tiene asignado un (Valor)
       document.getElementById("labelCotizacion").innerHTML = "El costo del seguro será de : " + resultadoPorcentajeSeguro.toFixed(3);
       document.getElementById("labelCotizacion").style.display = "block";
-
-      if (txtValor >= 100) {
-        //Es mayor o igual a 100 dlls
-        txtPorcentajeSeguro.value = resultadoPorcentajeSeguro.toFixed(3);
-        document.getElementById("txtPorcentajeSeguro").readOnly = true;
-        document.getElementById("porcentajeLabel").style.display = "block";
-        document.getElementById("txtPorcentajeSeguro").style.display = "block";
-      }
-      else {
-        //Si es manor
-        document.getElementById("txtPorcentajeSeguro").readOnly = false;
-        //
-        txtPorcentajeSeguro.value = "";
-        document.getElementById("txtPorcentajeSeguro").style.display = "none";
-
-        document.getElementById("labelCotizacion").style.display = "none";
-      }
-
-    }
-    else {
+      
+      txtPorcentajeSeguro.value = resultadoPorcentajeSeguro.toFixed(3);
+      document.getElementById("txtPorcentajeSeguro").readOnly = true;
+      document.getElementById("porcentajeLabel").style.display = "block";
+      document.getElementById("txtPorcentajeSeguro").style.display = "block";
+    }else {
       //Si no tiene un valor asignado
       document.getElementById("labelCotizacion").style.display = "none";
     }

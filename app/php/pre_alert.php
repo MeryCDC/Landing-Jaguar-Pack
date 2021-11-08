@@ -3,10 +3,9 @@
 require_once("conexion.php");
 
 if(isset($_POST['txtPeso']) && isset($_POST['txtvalor']) && isset($_POST['txtAlto']) &&
-       isset($_POST['txtAncho']) && isset($_POST['txtLargo']) && isset($_POST['txtContenido']) && isset($_POST['txtOrigen']) 
-       && isset($_POST['txtTracking'])
-   )
-   {
+   isset($_POST['txtAncho']) && isset($_POST['txtLargo']) && isset($_POST['txtContenido']) && 
+   isset($_POST['txtOrigen']) && isset($_POST['txtTracking'])){
+
        $peso = $_POST['txtPeso'];
        $valor = $_POST['txtvalor'];
        $alto = $_POST['txtAlto'];
@@ -25,66 +24,36 @@ if(isset($_POST['txtPeso']) && isset($_POST['txtvalor']) && isset($_POST['txtAlt
         
        if($seguro != 0)
        {
-           $resultado_seguro = ($valor * 10) / 100;
+           $resultado_seguro = ($valor * 5) / 100;
            $seguro = 1;
            
            $conexion->query("insert into prealertas (peso, alto, ancho, largo, valor, contenido,
            origen_pagina_web, seguro, porcentaje_del_seguro, status, id_cliente, tracking)
            values('$peso', '$alto', '$ancho', '$largo', '$valor', '$contenido', '$origen', '$seguro', '$resultado_seguro' , 0, '$id_cliente', '$tracking')  ")or die($conexion->error);
 
-            /*
-           echo "<p> $peso </p>";
-           echo "<p> $valor </p>";
-           echo "<p> $alto </p>";
-           echo "<p> $ancho </p>";
-           echo "<p> $largo </p>";
-           echo "<p> $contenido </p>";
-           echo "<p> $origen </p>";
-           echo "<p>Seguro $seguro </p>";
-           echo "<p> $idUsuario </p>";
-           */
+           $ultimo = $conexion->insert_id; 
+
+           $conexion->query("insert into estatus (estatus, comentario, id_prealerta)
+           values(0, 'Creada por el usuario', ' $ultimo') ")or die($conexion->error);
+
+           //$sql = "INSERT INTO `estatus` (`id`, `estatus`, `comentario`, `fecha_hora`, `id_prealerta`, `id_usuario`) VALUES (NULL, \'0\', NULL, current_timestamp(), \'28\', \'2\')";
 
            header('location: home.php');
+       } else {
+           $resultado_seguro = 0;
+           $seguro = 0;
+           $conexion->query("insert into prealertas (peso, alto, ancho, largo, valor, contenido,
+                            origen_pagina_web, seguro, porcentaje_del_seguro, status, id_cliente, tracking)
+                            values('$peso', '$alto', '$ancho', '$largo', '$valor', '$contenido', '$origen', '$seguro', '$resultado_seguro' , 0, '$id_cliente', '$tracking')  ")or die($conexion->error);
+
+            $ultimo = $conexion->insert_id; 
+
+            $conexion->query("insert into estatus (estatus, comentario, id_prealerta)
+            values(0, 'Creada por el usuario', ' $ultimo') ")or die($conexion->error);
+
+            //$sql = "INSERT INTO `estatus` (`id`, `estatus`, `comentario`, `fecha_hora`, `id_prealerta`, `id_usuario`) VALUES (NULL, \'0\', NULL, current_timestamp(), \'28\', \'2\')";
+            header('location: home.php');
        }
-       else
-       {
-
-        $resultado_seguro = 0;
-        $seguro = 0;
-
-
-        $conexion->query("insert into prealertas (peso, alto, ancho, largo, valor, contenido,
-        origen_pagina_web, seguro, porcentaje_del_seguro, status, id_cliente, tracking)
-        values('$peso', '$alto', '$ancho', '$largo', '$valor', '$contenido', '$origen', '$seguro', '$resultado_seguro' , 0, '$id_cliente', '$tracking')  ")or die($conexion->error);
-
-        /* 
-        echo "<p> $peso </p>";
-        echo "<p> $valor </p>";
-        echo "<p> $alto </p>";
-        echo "<p> $ancho </p>";
-        echo "<p> $largo </p>";
-        echo "<p> $contenido </p>";
-        echo "<p> $origen </p>";
-        echo "<p>Seguro $seguro </p>";
-        echo "<p> $idUsuario </p>";
-        */
-
-       header('location: home.php');
-       }
-
-       /*
-       echo "<p> $peso </p>";
-       echo "<p> $valor </p>";
-       echo "<p> $alto </p>";
-       echo "<p> $ancho </p>";
-       echo "<p> $largo </p>";
-       echo "<p> $contenido </p>";
-       echo "<p> $origen </p>";
-       echo "<p>Seguro $seguro </p>";
-       echo "<p> $idUsuario </p>";
-        */
-
        header('location: ../home.php');
-    
    }
 ?>

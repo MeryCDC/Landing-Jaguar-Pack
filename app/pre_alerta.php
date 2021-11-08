@@ -114,7 +114,7 @@
                                     </div>
                                 </div>
                                 <div class="col-md-8 mb-3">
-                                    <label for="txtPorcentajeSeguro" id="porcentajeLabel" style="display:none;">10 % del
+                                    <label for="txtPorcentajeSeguro" id="porcentajeLabel" style="display:none;">5% del
                                         Valor del Producto </label>
                                     <input type="text" class="form-control" id="txtPorcentajeSeguro"
                                         name="txtPorcentajeSeguro"
