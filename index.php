@@ -20,13 +20,7 @@
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/owl.carousel.css" />
     <link rel="stylesheet" href="css/style.css" />
-
-
-    <!--[if lt IE 9]>
-	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-	<![endif]-->
-
+    
 </head>
 
 <body>
@@ -52,7 +46,6 @@
     </header>
     <!-- Header section end -->
 
-
     <!-- Inicio section -->
     <section class="hero-section" id="inicio">
         <div class="container">
@@ -60,44 +53,58 @@
                 <div class="col-md-6 hero-text">
                     <h1>Adquiere en E.U </h1>
                     <h2 class="degradado">Recibe en NLD y CDMX</h2>
-                    <form class="hero-subscribe-from">
-                        <!--  <h6>Rastrea tu pedido, con tu número de tracking original</h6> -->
+                    <form class="hero-subscribe-from" id="rastreo" method="POST" action="rastreo.php">
                         <label for="">Rastrea tu pedido, con tu número de tracking original</label>
-                        <input type="text" placeholder="Temporalmente no disponible" readonly>
-                        <button class="site-btn sb-gradients">Buscar</button>
+                        <input type="text" id="txtTrack" name="txtTrack" placeholder="Ingrese el tracking">
+                        <button class="site-btn sb-gradients" type="submit">Buscar</button>
                     </form>
                 </div>
                 <div class="col-md-6">
-                    <!-- 	<img src="img/laptop.png" class="laptop-image" alt=""> -->
                 </div>
             </div>
         </div>
     </section>
     <!-- Inicio section end -->
 
-
-    <!-- Sobre nosotros -->
+    <!-- Cotizador -->
     <section class="about-section spad">
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 offset-lg-6 about-text">
-                    <h2 class="degradado">Compras rapidas, entregas rapidas</h2>
-                    <!-- <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5> -->
-                    <p>Somos un servicio de almacenamiento y envío de compras a bajo costo, hacemos el puente para que
-                        puedas comprar
-                        tus productos en tiendas online en EU, enviar a tu dirección en EU, almacenarla y despacharla
-                        hasta tu hogar.</p>
-                    <a href="https://www.jaguarpack.com/app/registro.php"
-                        class="site-btn sb-gradients sbg-line mt-5">Registrate</a>
+                <div class="col-lg-6 ">
+                    <div class="about-img">
+                        <img src="img\JP-INFO-2.png" alt="">
+                    </div>
                 </div>
-            </div>
-            <div class="about-img">
-                <img src="img/camion.png" alt="">
+                <div class="col-lg-6 ">
+                    <div class="widget-area">    
+                        <h2 class="degradado">Cotiza tu envio</h2>
+                        <p>Ingresa los datos respectivos de tu paquete y así obten un aproximado de cuánto te costará el envío.</p>
+                        <p>Ingresa el peso en <b>libras</b> y valor en <b>dolares</b> del producto de tu compra.</p>
+                        <form class="contact-form" id="cotizador" method="post">
+                            <input type="number" name="peso" id="peso" required="" step="any" placeholder="Ingresa el peso en lbs">
+                            <input type="number" name="valor" id="valor" required="" step="any" placeholder="Ingresa el valor en dolares">
+                            <div class="contact-type">
+									<label class="ct-label">Asegurar envio
+                                        <input type="checkbox" name="seguro" id="seguro">
+										 <span class="checkmark"></span>
+									</label>
+								</div>
+                            <!-- <input type="text" placeholder="Enter your email"> -->
+                            <button class="site-btn sb-full-- sb-gradients" type="submit">Cotiza</button>
+                            <!-- <input value="Cotizar" class="register-submit" id="cotizador" type="button" onclick="cotizacion()"> -->
+                            
+                            <div class="card-body" id="mostrarTotal" style="display: none;">
+                                <h4 id="total" class="degradado">El costo aproximado de su envío será de $200 MXN. (No incluye seguro)</h4>
+                                <!-- <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5> -->
+                                <p>El costo de su paquete puede variar si el peso no coincide con los datos antes proporcionados.</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <!-- About section end -->
-
 
     <!-- Features section -->
     <section class="features-section spad gradient-bg">
@@ -109,28 +116,28 @@
                 <!-- feature -->
                 <div class="col-md-6 col-lg-12 feature">
                     <i class="imagen"> <img src="img/garras.png" alt=""></i>
-                    <div class="col-md-2 col-lg-6 feature-content">
+                    <div class="col-lg-6 feature-content">
                         <h4>Servicio de $200 MXN. <br> Ampara hasta 3 lbs. Artículos menores a un valor de $100 USD</h4>
                     </div>
                 </div>
                 <!-- feature -->
                 <div class="col-md-6 col-lg-12 feature">
                     <i class="imagen"> <img src="img/garras.png" alt=""></i>
-                    <div class="col-md-2 col-lg-6 feature-content">
+                    <div class="col-lg-6 feature-content">
                         <h4>Artículos mayores de 3 lbs, se cobra un excedente de $75 MXN x libra.</h4>
                     </div>
                 </div>
                 <!-- feature -->
                 <div class="col-md-6 col-lg-12 feature">
                     <i class="imagen"> <img src="img/garras.png" alt=""></i>
-                    <div class="col-md-2 col-lg-6 feature-content">
+                    <div class="col-lg-6 feature-content">
                         <h4>Artículos con un valor mayor a $100 USD, se cobra un interés del 16%.</h4>
                     </div>
                 </div>
                 <!-- feature -->
                 <div class="col-md-6 col-lg-12 feature">
                     <i class="imagen"> <img src="img/garras.png" alt=""></i>
-                    <div class="col-md-2 col-lg-6 feature-content">
+                    <div class="col-lg-6 feature-content">
                         <h4>Un seguro del 5% del valor asegurado.</h4>
                     </div>
                 </div>
@@ -138,48 +145,6 @@
             </div>
         </div>
     </section>
-
-    <!-- Process section -->
-    <section class="process-section spad">
-        <div class="container">
-            <div class="section-title text-center">
-                <h2 class="degradado">¿Cómo funciona nuestro servicio?</h2>
-            </div>
-            <div class="row" style="display:flex;">
-                <div class="col-md-4 process">
-                    <div class="process-step">
-                        <figure class="process-icon">
-                            <img src="img\JP-INFO-1.png" alt="#">
-                        </figure>
-                        <h4>1. Regístrate en JaguarPack y obtén tu dirección en USA.</h4>
-                        <p>Esta será su dirección dentro de los Estados Unidos. <br> Tenerla no le generará tarifas ni
-                            cargos. <br><br></p>
-                    </div>
-                </div>
-                <div class="col-md-4 process">
-                    <div class="process-step">
-                        <figure class="process-icon">
-                            <img src="img\JP-INFO-2.png" alt="#">
-                        </figure>
-                        <h4>2. Compre en cualquier tienda de USA. Y envíela a su nueva dirección de USA.</h4>
-                        <p>Utilice la dirección que le proporcionamos para recibir sus compras en nuestra bodega en USA.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-4 process">
-                    <div class="process-step">
-                        <figure class="process-icon">
-                            <img src="img\JP-INFO-3.png" alt="#">
-                        </figure>
-                        <h4>3. Rastrea y recibe tu pedido.</h4>
-                        <p>Puedes rastrear tu pedido desde tu cuenta de JaguarPack, te dirá el último estatus de tu
-                            paquete. <br><br><br> </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Process section end -->
 
     <!-- Blog section -->
     <section class="blog-section spad">
@@ -197,8 +162,7 @@
 
                         <div class="blog-text">
                             <h5 class="blog-title"> 1. Regístrate en JaguarPack y obtén tu dirección en USA.</h5>
-                            <p>Esta será su dirección dentro de los Estados Unidos. <br> Tenerla no le generará tarifas
-                                ni cargos. <br> <br></p>
+                            <p>Esta será su dirección dentro de los Estados Unidos. <br> Tenerla no le generará tarifas ni cargos. <br> <br></p>
                         </div>
                     </div>
                 </div>
@@ -236,46 +200,6 @@
     </section>
     <!-- Blog section end -->
 
-    <section class="process-section spad">
-        <div class="container">
-            <div class="section-title text-center">
-                <h2 class="degradado">¿Cómo funciona nuestro servicio?</h2>
-            </div>
-            <div class="card-deck">
-                <div class="card">
-                    <img src="img\JP-INFO-1.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Regístrate en JaguarPack y obtén tu dirección en USA.</h5>
-                        <p class="card-text">Esta será su dirección dentro de los Estados Unidos. <br> Tenerla no le
-                            generará tarifas ni
-                            cargos.</p>
-
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img\JP-INFO-2.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Compre en cualquier tienda de USA. Y envíela a su nueva dirección de USA.
-                        </h5>
-                        <p class="card-text">Utilice la dirección que le proporcionamos para recibir sus compras en
-                            nuestra bodega en USA.</p>
-                        <!--                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img\JP-INFO-3.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Rastrea y recibe tu pedido.</h5>
-                        <p class="card-text">Puedes rastrear tu pedido desde tu cuenta de JaguarPack, te dirá el último
-                            estatus de tu paquete.</p>
-                        <!--                         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
     <!-- Fact section -->
     <section class="fact-section gradient-bg">
         <div class="container text-white">
@@ -306,17 +230,27 @@
     </section>
     <!-- Fact section end -->
 
-    <!-- Review section -->
-    <section class="review-section spad">
+    <!-- Sobre nosotros -->
+    <section class="about-section spad">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8 push-8">
-                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <div class="col-lg-6 offset-lg-6 about-text">
+                    <h2 class="degradado">Compras rapidas, entregas rapidas</h2>
+                    <!-- <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5> -->
+                    <p>Somos un servicio de almacenamiento y envío de compras a bajo costo, hacemos el puente para que
+                        puedas comprar
+                        tus productos en tiendas online en EU, enviar a tu dirección en EU, almacenarla y despacharla
+                        hasta tu hogar.</p>
+                    <a href="https://www.jaguarpack.com/app/registro.php"
+                        class="site-btn sb-gradients sbg-line mt-5">Registrate</a>
                 </div>
+            </div>
+            <div class="about-img">
+                <img src="img/camion.png" alt="">
             </div>
         </div>
     </section>
-    <!-- Review section end -->
+    <!-- About section end -->
 
 
     <!-- Newsletter section -->
@@ -389,9 +323,10 @@
     </footer>
 
     <!--====== Javascripts & Jquery ======-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.1.9/dist/sweetalert2.all.min.js"></script>
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-</body>
+</body> 
 
 </html>
