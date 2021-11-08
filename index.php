@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/owl.carousel.css" />
     <link rel="stylesheet" href="css/style.css" />
-    
+
 </head>
 
 <body>
@@ -70,33 +70,58 @@
     <section class="about-section spad">
         <div class="container">
             <div class="row">
+                <br>
                 <div class="col-lg-6 ">
-                    <div class="about-img">
-                        <img src="img\JP-INFO-2.png" alt="">
+                    <div class="single-blog-page blog-text">
+                        <blockquote>
+                            Servicio base de $200 MXN
+                            <p>Ampara artículos con un peso máximo de 3 libras y valor un valor inferior a $100 USD.</p>
+                        </blockquote>
+                        <ul>
+                            <li type="circle">
+                                <p class="blog-title" style="font-size: 18px; color: #39b14a;">Artículos con un peso
+                                    superior a 3 libras se cobra un cargo de $75 MXN por cada libra excedente.</p>
+                            </li>
+                            <li type="circle">
+                                <p class="blog-title" style="font-size: 18px; color: #39b14a;">Artículos con un valor
+                                    superior a los $100 USD se cobra un interés del 16% basándonos en el valor del
+                                    producto.</p>
+                            </li>
+                            <li type="circle">
+                                <p class="blog-title" style="font-size: 18px; color: #39b14a;">Si quieres asegurar tú
+                                    envío se te cobrara un 5% del valor del producto.</p>
+                            </li>
+                        </ul>
                     </div>
+
                 </div>
                 <div class="col-lg-6 ">
-                    <div class="widget-area">    
+                    <div class="widget-area">
                         <h2 class="degradado">Cotiza tu envio</h2>
-                        <p>Ingresa los datos respectivos de tu paquete y así obten un aproximado de cuánto te costará el envío.</p>
+                        <p>Ingresa los datos respectivos de tu paquete y así obten un aproximado de cuánto te costará el
+                            envío.</p>
                         <p>Ingresa el peso en <b>libras</b> y valor en <b>dolares</b> del producto de tu compra.</p>
                         <form class="contact-form" id="cotizador" method="post">
-                            <input type="number" name="peso" id="peso" required="" step="any" placeholder="Ingresa el peso en lbs">
-                            <input type="number" name="valor" id="valor" required="" step="any" placeholder="Ingresa el valor en dolares">
+                            <input type="number" name="peso" id="peso" required="" step="any"
+                                placeholder="Ingresa el peso en lbs">
+                            <input type="number" name="valor" id="valor" required="" step="any"
+                                placeholder="Ingresa el valor en dolares">
                             <div class="contact-type">
-									<label class="ct-label">Asegurar envio
-                                        <input type="checkbox" name="seguro" id="seguro">
-										 <span class="checkmark"></span>
-									</label>
-								</div>
+                                <label class="ct-label">Asegurar envio
+                                    <input type="checkbox" name="seguro" id="seguro">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
                             <!-- <input type="text" placeholder="Enter your email"> -->
                             <button class="site-btn sb-full-- sb-gradients" type="submit">Cotiza</button>
                             <!-- <input value="Cotizar" class="register-submit" id="cotizador" type="button" onclick="cotizacion()"> -->
-                            
+
                             <div class="card-body" id="mostrarTotal" style="display: none;">
-                                <h4 id="total" class="degradado">El costo aproximado de su envío será de $200 MXN. (No incluye seguro)</h4>
+                                <h4 id="total" class="degradado">El costo aproximado de su envío será de $200 MXN. (No
+                                    incluye seguro)</h4>
                                 <!-- <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5> -->
-                                <p>El costo de su paquete puede variar si el peso no coincide con los datos antes proporcionados.</p>
+                                <p>El costo de su paquete puede variar si el peso no coincide con los datos antes
+                                    proporcionados.</p>
                             </div>
                         </form>
                     </div>
@@ -162,7 +187,8 @@
 
                         <div class="blog-text">
                             <h5 class="blog-title"> 1. Regístrate en JaguarPack y obtén tu dirección en USA.</h5>
-                            <p>Esta será su dirección dentro de los Estados Unidos. <br> Tenerla no le generará tarifas ni cargos. <br> <br></p>
+                            <p>Esta será su dirección dentro de los Estados Unidos. <br> Tenerla no le generará tarifas
+                                ni cargos. <br> <br></p>
                         </div>
                     </div>
                 </div>
@@ -327,6 +353,6 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
-</body> 
+</body>
 
 </html>

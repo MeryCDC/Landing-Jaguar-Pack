@@ -275,11 +275,11 @@ $(document).ready(function () {
 						'</table>' +
 						'</div>',
 					showCloseButton: true,
-					showCancelButton: true,
 					focusConfirm: false,
-					confirmButtonText:
-						'<i class="fa fa-thumbs-up"></i> Great!',
-					confirmButtonAriaLabel: 'Thumbs up, great!'
+					buttonsStyling: false,
+					customClass: {
+						confirmButton: "site-btn sb-gradients"
+					}
 				})
 			}
 		})
