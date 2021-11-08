@@ -27,7 +27,7 @@
     <!-- Header section -->
     <header class="header-section clearfix" id="menu">
         <div class="container-fluid">
-            <a href="index.html" class="logo" id="logo">
+            <a href="/" class="logo" id="logo">
                 <img src="img/logo2.png" alt="" id="logotipo">
             </a>
             <div class="responsive-bar"><i class="fa fa-bars"></i></div>
@@ -36,10 +36,10 @@
             <nav class="main-menu">
                 <ul class="menu-list">
                     <li><a href="#inicio">Inicio</a></li>
-                    <!-- <li><a href="">Features</a></li>
-					<li><a href="">News</a></li> -->
-                    <li><a href="">Acerca de</a></li>
-                    <li><a href="">Contacto</a></li>
+                    <li><a href="#cotiza">Cotiza</a></li>
+                    <li><a href="#funcionamiento">¿Como funciona?</a></li>
+                    <li><a href="#acerca">Acerca de</a></li>
+                    <li><a href="/app/registro.php">Registro</a></li>
                 </ul>
             </nav>
         </div>
@@ -67,7 +67,7 @@
     <!-- Inicio section end -->
 
     <!-- Cotizador -->
-    <section class="about-section spad">
+    <section class="about-section spad" id="cotiza">
         <div class="container">
             <div class="row">
                 <br>
@@ -129,7 +129,7 @@
             </div>
         </div>
     </section>
-    <!-- About section end -->
+    <!-- Final cotizador -->
 
     <!-- Features section -->
     <section class="features-section spad gradient-bg">
@@ -171,8 +171,8 @@
         </div>
     </section>
 
-    <!-- Blog section -->
-    <section class="blog-section spad">
+    <!-- ¿Como funciona? -->
+    <section class="blog-section spad" id="funcionamiento">
         <div class="container">
             <div class="section-title text-center">
                 <h2 class="degradado">¿Cómo funciona nuestro servicio?</h2>
@@ -224,9 +224,9 @@
             </div>
         </div>
     </section>
-    <!-- Blog section end -->
+    <!-- Final ¿Como funciona? -->
 
-    <!-- Fact section -->
+    <!-- Experiencia -->
     <section class="fact-section gradient-bg">
         <div class="container text-white">
             <div class="section-title text-center">
@@ -254,10 +254,10 @@
             </div>
         </div>
     </section>
-    <!-- Fact section end -->
+    <!-- Final experiencia -->
 
     <!-- Sobre nosotros -->
-    <section class="about-section spad">
+    <section class="about-section spad" id="acerca">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-6 about-text">
@@ -276,8 +276,7 @@
             </div>
         </div>
     </section>
-    <!-- About section end -->
-
+    <!-- Final Sobre nosotros -->
 
     <!-- Newsletter section -->
     <section class="newsletter-section gradient-bg">

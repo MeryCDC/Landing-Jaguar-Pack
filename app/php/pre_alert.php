@@ -24,7 +24,8 @@ if(isset($_POST['txtPeso']) && isset($_POST['txtvalor']) && isset($_POST['txtAlt
         
        if($seguro != 0)
        {
-           $resultado_seguro = ($valor * 5) / 100;
+           $valorMXN = $valor * 20;
+           $resultado_seguro = ($valorMXN * 5) / 100;
            $seguro = 1;
            
            $conexion->query("insert into prealertas (peso, alto, ancho, largo, valor, contenido,

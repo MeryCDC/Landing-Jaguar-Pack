@@ -28,17 +28,17 @@
                             
                             <div class="form-row">
                                 <div class="col-md-6 mb-3">
-                                    <label for="txtPeso"> Peso en Libras (lb) *</label>
+                                    <label for="txtPeso"> Peso en <b>Libras</b> (lb) *</label>
                                     <input type="text" class="form-control" id="txtPeso" name="txtPeso"
-                                        placeholder="8.20" value="" pattern="[0-9.]{1,6}"
+                                        placeholder="0 lb" value="" pattern="[0-9.]{1,6}"
                                         title="Solo puede ingresar números" required>
                                     <div class="valid-feedback">¡Ok válido!</div>
                                     <div class="invalid-feedback">No deje el campo "Peso(s)" vacío.</div>
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                    <label for="txtvalor">Valor en Dólares del Producto (dlls) *</label>
+                                    <label for="txtvalor">Valor en <b>Dólares</b> del Producto (dlls) *</label>
                                     <input type="text" class="form-control" id="txtvalor" name="txtvalor"
-                                        placeholder="730" value="" oninput="calcularPorcentajeSeguro()"
+                                        placeholder="0 dlls" value="" oninput="calcularPorcentajeSeguro()"
                                         pattern="[0-9.]{1,7}" title="Solo puede ingresar números" required>
                                     <div class="valid-feedback">¡Ok válido!</div>
                                     <div class="invalid-feedback">No deje el campo "Valor del Producto" vacío.</div>
@@ -46,26 +46,26 @@
                             </div>
                             <div class="form-row">
                                 <div class="col-md-4 mb-3">
-                                    <label for="txtAlto">Alto en Pulgadas (in) *</label>
+                                    <label for="txtAlto">Alto en Pulgadas (in)</label>
                                     <input type="text" class="form-control" id="txtAlto" name="txtAlto"
-                                        placeholder="19.685" value="" pattern="[0-9.]{1,6}"
-                                        title="Solo puede ingresar números" required>
+                                        placeholder="0" value="" pattern="[0-9.]{1,6}"
+                                        title="Solo puede ingresar números">
                                     <div class="valid-feedback">¡Ok válido!</div>
                                     <div class="invalid-feedback">No deje el campo "Alto" vacío.</div>
                                 </div>
                                 <div class="col-md-4 mb-3">
-                                    <label for="txtAncho">Ancho en Pulgadas (in) *</label>
+                                    <label for="txtAncho">Ancho en Pulgadas (in)</label>
                                     <input type="text" class="form-control" id="txtAncho" name="txtAncho"
-                                        placeholder="27.5591" value="" pattern="[0-9.]{1,6}"
-                                        title="Solo puede ingresar números" required>
+                                        placeholder="0" value="" pattern="[0-9.]{1,6}"
+                                        title="Solo puede ingresar números">
                                     <div class="valid-feedback">¡Ok válido!</div>
                                     <div class="invalid-feedback">No deje el campo "Ancho" vacío.</div>
                                 </div>
                                 <div class="col-md-4 mb-3">
-                                    <label for="txtLargo">Largo en Pulgadas (in) *</label>
+                                    <label for="txtLargo">Largo en Pulgadas (in)</label>
                                     <input type="text" class="form-control" id="txtLargo" name="txtLargo"
-                                        placeholder="39.3701" value="" pattern="[0-9.]{1,6}"
-                                        title="Solo puede ingresar números" required>
+                                        placeholder="0" value="" pattern="[0-9.]{1,6}"
+                                        title="Solo puede ingresar números">
                                     <div class="valid-feedback">¡Ok válido!</div>
                                     <div class="invalid-feedback">No deje el campo "Largo" vacío.</div>
                                 </div>
