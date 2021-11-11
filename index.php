@@ -131,35 +131,31 @@
     </section>
     <!-- Final cotizador -->
 
-    <!-- Features section -->
-    <section class="features-section spad gradient-bg">
+    <!-- Cobertura -->
+    <!--     <section class="features-section spad gradient-bg">
         <div class="container text-white">
             <div class="section-title">
-                <h2>Costos del servicio</h2>
+                <h2>Cobertura del servicio</h2>
             </div>
             <div class="row">
-                <!-- feature -->
                 <div class="col-md-6 col-lg-12 feature">
                     <i class="imagen"> <img src="img/garras.png" alt=""></i>
                     <div class="col-lg-6 feature-content">
                         <h4>Servicio de $200 MXN. <br> Ampara hasta 3 lbs. Artículos menores a un valor de $100 USD</h4>
                     </div>
                 </div>
-                <!-- feature -->
                 <div class="col-md-6 col-lg-12 feature">
                     <i class="imagen"> <img src="img/garras.png" alt=""></i>
                     <div class="col-lg-6 feature-content">
                         <h4>Artículos mayores de 3 lbs, se cobra un excedente de $75 MXN x libra.</h4>
                     </div>
                 </div>
-                <!-- feature -->
                 <div class="col-md-6 col-lg-12 feature">
                     <i class="imagen"> <img src="img/garras.png" alt=""></i>
                     <div class="col-lg-6 feature-content">
                         <h4>Artículos con un valor mayor a $100 USD, se cobra un interés del 16%.</h4>
                     </div>
                 </div>
-                <!-- feature -->
                 <div class="col-md-6 col-lg-12 feature">
                     <i class="imagen"> <img src="img/garras.png" alt=""></i>
                     <div class="col-lg-6 feature-content">
@@ -169,7 +165,113 @@
 
             </div>
         </div>
+    </section> -->
+    <!-- Final Cobertura -->
+
+    <!-- Cobertura -->
+    <section class="features-section spad gradient-bg">
+        <div class="container text-white">
+            <div class="section-title text-center">
+                <h2>Cobertura del servicio</h2>
+            </div>
+            <div class="row">
+                <!-- feature -->
+                <div class="col-md-9">
+                    <div>
+                        <h4 class="text-center">Area metropolitana de CDMX</h4>
+                        <br><br>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <ul>
+                                    <li type="circle">Gustavo A Madero</li>
+                                    <li type="circle">Azcapotzalco</li>
+                                    <li type="circle">Miguel Hidalgo</li>
+                                    <li type="circle">Cuauhtémoc</li>
+                                    <li type="circle">Venustiano Carranza</li>
+                                    <li type="circle">Cuajimalpa</li>
+                                    <li type="circle">Álvaro Obregón</li>
+                                    <li type="circle">Benito Juárez</li>
+                                    <li type="circle">Iztacalco</li>
+                                    <li type="circle">La Magdelena Contretas</li>
+                                    <li type="circle">Tlalpan</li>
+                                    <li type="circle">Coyoacán</li>
+                                    <li type="circle">Iztapalapa</li>
+                                    <li type="circle">Xochimilco</li>
+                                    <li type="circle">Tláhuac</li>
+                                    <li type="circle">Milpa Alta</li>
+                                    <li type="circle">Cuautitlán</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <ul>
+                                    <li type="circle">San Pablo De Las Salinas</li>
+                                    <li type="circle">Tultepec (Revision)</li>
+                                    <li type="circle">Tultitlan De Mariano Escobedo</li>
+                                    <li type="circle">Buenavista</li>
+                                    <li type="circle">Ojo De Agua</li>
+                                    <li type="circle">San Francisco Coacalco</li>
+                                    <li type="circle">Ecatepec Morelos</li>
+                                    <li type="circle">Tlalnepantla De Baz</li>
+                                    <li type="circle">Tepotzotlán</li>
+                                    <li type="circle">San Juan Ixtayopan</li>
+                                    <li type="circle">San Pedro Atocpan</li>
+                                    <li type="circle">San Miguel Topilejo</li>
+                                    <li type="circle">San Miguel Ajusco</li>
+                                    <li type="circle">Chimalhuacán</li>
+                                    <li type="circle">Nezahualcóyotl</li>
+                                    <li type="circle">Texcoco</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <ul> 
+                                    <li type="circle">Los Reyes Acaquilpan</li>
+                                    <li type="circle">Chicoloapan de Juárez</li>
+                                    <li type="circle">Chicoloapan de Juárez</li>
+                                    <li type="circle">Montecillo</li>
+                                    <li type="circle">Coatepec</li>
+                                    <li type="circle">San Francisco Acuautla</li>
+                                    <li type="circle">Ixtapaluca</li>
+                                    <li type="circle">Valle Del Chalco Solidaridad</li>
+                                    <li type="circle">San Marcos Huixtoco</li>
+                                    <li type="circle">Chalco De Diaz Covarrubias</li>
+                                    <li type="circle">San Martin Cuautla</li>
+                                    <li type="circle">Chicoloapan de Juárez</li>
+                                    <li type="circle">Amecameca</li>
+                                    <li type="circle">Teotihuacan</li>
+                                    <li type="circle">Acolman</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-3">
+                                <ul>
+                                    <li type="circle">Naucalpan De Juárez</li>
+                                    <li type="circle">Ciudad Satélite</li>
+                                    <li type="circle">Ciudad López Mateos</li>
+                                    <li type="circle">Melchor Ocampo</li>
+                                    <li type="circle">Huixquilucan</li>
+                                    <li type="circle">Atizapan De Zaragoza (Adolfo Lopez Mateos)</li>
+                                    <li type="circle">Nextlalpan</li>
+                                    <li type="circle">Tecámac</li>
+                                    <li type="circle">Tepetlaoxtoc</li>
+                                    <li type="circle">Tlalmanalco De Velázquez</li>
+                                    <li type="circle">Tepotzotlán</li>
+                                    <li type="circle">Nicolas Romero [México]</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- feature -->
+                <div class="col-md-3">
+                    <div>
+                        <h4 class="text-center" style="color: #DEE3EB;">Nuevo Laredo</h4>
+                        <br><br>
+                        <p class="text-center" style="color: #DEE3EB;">Ciudad de Nuevo Laredo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
+     <!-- Final Cobertura -->
 
     <!-- ¿Como funciona? -->
     <section class="blog-section spad" id="funcionamiento">
