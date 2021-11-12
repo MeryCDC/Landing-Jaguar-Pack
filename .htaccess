@@ -1,0 +1,9 @@
+RewriteCond %{REQUEST_URI} ^/jaguarpack/
+RewriteRule ^(.*)$ https://jaguarpack.com/$1 [R=301,L]
+
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php
+</IfModule>
