@@ -18,10 +18,17 @@
         </div>
     </div>
 </footer>
+<script src="assets/chocolat.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) { 
+            Chocolat(document.querySelectorAll('.chocolat-parent .chocolat-image'))
+    })
+</script>
 <script src="assets/jquery/jquery-3.3.1.min.js"></script>
 <script src="assets/popper/popper.min.js"></script>
 <script src="assets/bootstrap4/js/bootstrap.min.js"></script>
 <script src="assets/codigo.js"></script>
+
 <script>
 $('.responsive-bar-sistema').on('click', function(event) {
     $('.main-menu').slideToggle(400);

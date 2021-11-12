@@ -17,6 +17,10 @@
     <link rel="stylesheet" href="../css/animate.css" />
     <link rel="stylesheet" href="../css/owl.carousel.css" />
     <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="css/table.css">
+    <link rel="stylesheet" href="assets/chocolat.css">
+
+    <script src="assets/chocolat/dist/js/jquery.chocolat.js"></script>
 </head>
 <body>
     <!-- Header section -->

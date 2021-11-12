@@ -6,7 +6,7 @@
 <!-- Contenido -->
 <section class="about-section spansistema">
 <div class="container">
-    <?php if($confirmar_datos_usuario > 0): ?>
+    <?php if($confirmar_datos_usuario > 0): ?> 
     <div class="small-container3 center-block">
         <div class="card text-dark bg-light mb-3 ">
             <div class="card-header text-center">
@@ -73,12 +73,7 @@
                         </div><br>
                         <!-- Boton para ver el historial de pedidos -->
                         <div class="col-12 text-center">
-                            <form action="historial_prealerta.php" method="post">
-                                <input type="hidden" class="form-control" id="txtIdUsuarioHidden"
-                                    name="txtIdUsuarioHidden" placeholder="" value="<?php echo $id_usuario ?>" required>
-                                <button type="submit" class="btn btn-info btn-lg">Historial <br>de
-                                    Pedidos</button>
-                            </form>
+                            <a href="historial_prealerta.php" class="btn btn-info btn-lg">Historial <br>de Pedidos</a>
                         </div>
                     </div>
                 </div>
