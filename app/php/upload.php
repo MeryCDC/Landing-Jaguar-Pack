@@ -31,8 +31,9 @@ if(isset($_FILES["exampleFormControlFile1"]))
             $imagen_eliminar = $obj->ruta;
             unlink($imagen_eliminar);
             $conexion->query("UPDATE comprobantes SET ruta='$ruta_tmp' WHERE idPrealerta='$id' ");
-            echo $ruta_tmp;
-            //header("Location: ../home.php");
+            session_start();
+            $_SESSION['comprobante']="¡Comprobante cambiado correctamente!";
+            header("Location: ../prealerta_detalle.php?id=".$id);
         }
     }
     else
@@ -45,7 +46,9 @@ if(isset($_FILES["exampleFormControlFile1"]))
         {
             $conexion->query("insert into comprobantes(ruta, idPrealerta) values ('$ruta_tmp','$id') ");
             $conexion->query("update prealertas SET status=5 WHERE id='$id' ");
-            header("Location: ../home.php");            
+            session_start();
+            $_SESSION['comprobante']="¡Comprobante agregado correctamente!";
+            header("Location: ../prealerta_detalle.php?id=".$id);            
         }
     }
     $file_type = $file["type"];

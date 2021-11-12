@@ -1,3 +1,4 @@
+<?php $id_prealerta = $_GET['id']; ?>
 <?php require_once 'php/prealert_details.php';?>
 <?php require_once 'php/home.php'?>
 <?php $Usuario = $email_sesion ?>
@@ -6,12 +7,24 @@
 
 <!-- Contenido -->
 <section class="about-section spansistema">
-
-
     <div class="container">
+
+        <?php 
+        if (isset($_SESSION['comprobante'])) { ?>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong><?php echo $_SESSION['comprobante'] ?></strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <?php } 
+        unset($_SESSION['comprobante']);
+        ?>
+
         <div class="card text-dark bg-light mb-3 ">
             <div class="card-header text-center"> <b><i>Detalle de la Pre-Alerta: </i></b> # <?php echo $idPrealerta ?>
-                <br> <b><i>Fecha y Hora: </i></b>(<?php echo $timeStamp ?>) </div>
+                <br> <b><i>Fecha y Hora: </i></b>(<?php echo $timeStamp ?>)
+            </div>
             <div class="row">
                 <div class="col">
                     <div class="card-body">

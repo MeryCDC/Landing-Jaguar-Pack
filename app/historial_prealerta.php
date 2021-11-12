@@ -65,12 +65,7 @@
                                     <td class="status"><span class="info">Comprobante Adjuntado</span></td>
                                 <?php } ?>
                                 <td> $ </td>
-                                <form action="prealerta_detalle.php" method="post">
-                                    <input type="hidden" class="form-control" id="txtIdPrealertaHidden"
-                                        name="txtIdPrealertaHidden" placeholder=""
-                                        value="<?php echo $obj_prealerta->id ?>" required>
-                                    <td> <button type="submit" class="btn btn-dark"> Ver Pre-Alerta</button> </td>
-                                </form>
+                                <td> <a href="prealerta_detalle.php?id=<?php echo $obj_prealerta->id ?>" class="btn btn-dark">Ver detalles</a> </td>
                                 </tr>
                                 <?php } ?>
                             </tbody>

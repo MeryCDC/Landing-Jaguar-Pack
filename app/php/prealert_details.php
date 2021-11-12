@@ -1,8 +1,7 @@
 <?php
 require_once("conexion.php");
-if(isset($_POST['txtIdPrealertaHidden'])){
-    $id = $_POST['txtIdPrealertaHidden'];
-    //echo $id;
+if(isset($id_prealerta)) {
+    $id = $id_prealerta;
 
     $result = $conexion->query(" select * from prealertas where id='$id' ");
     $obj = $result->fetch_object();
