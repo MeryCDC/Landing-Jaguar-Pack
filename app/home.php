@@ -10,7 +10,10 @@
     <div class="small-container3 center-block">
         <div class="card text-dark bg-light mb-3 ">
             <div class="card-header text-center">
-                <b><i>Datos del Generales de: </i></b> <?php echo $email_sesion ?>
+                <b><i>Datos del Generales de: </i></b> <?php echo $nombre_completo ?> <br>
+                <a href="#" class="fa fa-question-circle"
+                                    data-original-title="Este es el número de identificación de tu casillero virtual." 
+                                    data-placement="left" data-toggle="tooltip"></a>
                 <b><i>Núm. Casillero:</i></b> JP<?php echo $id_usuario ?>
             </div>
             <div class="row">
@@ -46,7 +49,9 @@
                             <input type="hidden" class="form-control" id="txtIdUsuarioHidden" name="txtIdUsuarioHidden"
                                 placeholder="" value="<?php echo $id_usuario ?>" required>
                             <br> <br>
-                            <p class="card-text"> <b><i>Dirección de tu Casillero Virtual:</i></b> 1119
+                            <p class="card-text"> <a href="#" class="fa fa-question-circle"
+                                    data-original-title="Esta es la dirección de envío que usted debe de ingresar al realizar su compra." 
+                                    data-placement="left" data-toggle="tooltip"></a> <b><i>Dirección de tu Casillero Virtual:</i></b> 1119
                                 Santa Isabel Ave, Laredo, TX 78040, EE. UU. </p>
                             <button type="submit" class="btn btn-success">Editar Información
                                 General</button>
