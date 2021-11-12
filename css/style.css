@@ -130,7 +130,7 @@ a:focus {
 ul,
 ol {
 	padding: 0;
-	margin: 0;
+	margin-left: 1.5rem;
 }
 
 /*---------------------
@@ -575,7 +575,7 @@ ol {
 }
 
 .process-step .process-icon {
-	/* height: 55px; */
+	height: 55px;
 	margin-bottom: 30px;
 	padding-top: 5px;
 }
@@ -595,6 +595,7 @@ ol {
 	height: 56px;
 	top: -40px;
 	right: -40%;
+	background: url("../img/process-line.png") no-repeat scroll 0 0/cover;
 }
 
 /*---------------------
@@ -1421,7 +1422,7 @@ ol {
 -----------------------*/
 
 .contact-form {
-	padding-right: 35px;
+/*	padding-right: 35px; */
 }
 
 .contact-form h5 {
@@ -1750,8 +1751,6 @@ ol {
 		display: block;
 		cursor: pointer;
 	}
-
-	
 	.header-section .responsive-bar-sistema {
 		float: right;
 		font-size: 25px;
@@ -1763,10 +1762,12 @@ ol {
 	.header-section .user {
 		float: right;
 		font-size: 25px;
-		color: #333;
+		
 		margin-right: 20px;
 		display: block;
+		color: #39B14A;
 	}
+	
 	.main-menu {
 		float: none;
 		position: absolute;
@@ -1996,6 +1997,7 @@ ol {
 	width: 100%;
 	background-color: #333;
 	color:#fff;
+	
 }
 
 .logosticky {
@@ -2027,10 +2029,3 @@ ol {
 	margin: 10px;
   }
 
-  .sweetAlert {
-	width: 22em;
-	margin: 0 auto;
-	top: 300px;
-	left: 512px;
-	right: 0;
-}

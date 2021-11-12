@@ -48,3 +48,12 @@
 [14-Oct-2021 16:45:13 America/Boise] PHP Warning:  session_start(): Cannot start session when headers already sent in /home4/contrpd3/public_html/controldecompras/compras/editar_datos_generales.php on line 9
 [14-Oct-2021 16:45:55 America/Boise] PHP Warning:  session_start(): Cannot start session when headers already sent in /home4/contrpd3/public_html/controldecompras/compras/editar_datos_generales.php on line 9
 [14-Oct-2021 16:46:03 America/Boise] PHP Warning:  session_start(): Cannot start session when headers already sent in /home4/contrpd3/public_html/controldecompras/compras/editar_datos_generales.php on line 9
+[22-Oct-2021 10:20:02 America/Boise] PHP Warning:  Undefined array key "email" in /home4/contrpd3/public_html/jaguarpack/app/php/home.php on line 5
+[22-Oct-2021 10:20:02 America/Boise] PHP Warning:  Attempt to read property "confirmar_datos" on null in /home4/contrpd3/public_html/jaguarpack/app/php/home.php on line 13
+[22-Oct-2021 10:20:02 America/Boise] PHP Warning:  Attempt to read property "id" on null in /home4/contrpd3/public_html/jaguarpack/app/php/home.php on line 14
+[23-Oct-2021 16:40:44 America/Boise] PHP Warning:  Undefined array key "email" in /home4/contrpd3/public_html/jaguarpack/app/php/home.php on line 5
+[23-Oct-2021 16:40:44 America/Boise] PHP Warning:  Attempt to read property "confirmar_datos" on null in /home4/contrpd3/public_html/jaguarpack/app/php/home.php on line 13
+[23-Oct-2021 16:40:44 America/Boise] PHP Warning:  Attempt to read property "id" on null in /home4/contrpd3/public_html/jaguarpack/app/php/home.php on line 14
+[26-Oct-2021 11:50:47 America/Boise] PHP Warning:  Undefined array key "email" in /home4/contrpd3/public_html/jaguarpack/app/php/home.php on line 5
+[26-Oct-2021 11:50:47 America/Boise] PHP Warning:  Attempt to read property "confirmar_datos" on null in /home4/contrpd3/public_html/jaguarpack/app/php/home.php on line 13
+[26-Oct-2021 11:50:47 America/Boise] PHP Warning:  Attempt to read property "id" on null in /home4/contrpd3/public_html/jaguarpack/app/php/home.php on line 14

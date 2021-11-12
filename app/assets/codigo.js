@@ -34,7 +34,7 @@ function calcularPorcentajeSeguro() {
 
     if (txtValor != "") {
       //Si tiene asignado un (Valor)
-      document.getElementById("labelCotizacion").innerHTML = "El costo del seguro será de : " + resultadoPorcentajeSeguro.toFixed(3) + "MXN";
+      document.getElementById("labelCotizacion").innerHTML = "El costo del seguro será de : " + resultadoPorcentajeSeguro.toFixed(2) + "MXN";
       document.getElementById("labelCotizacion").style.display = "block";
       
       txtPorcentajeSeguro.value = resultadoPorcentajeSeguro.toFixed(3);
@@ -50,7 +50,7 @@ function calcularPorcentajeSeguro() {
     //Si NO está seleccionado el "Seguro"
     if (txtValor != "") {
 
-      document.getElementById("labelCotizacion").innerHTML = "El costo del seguro será de : " + resultadoPorcentajeSeguro.toFixed(3) + "MXN";
+      document.getElementById("labelCotizacion").innerHTML = "El costo del seguro será de : " + resultadoPorcentajeSeguro.toFixed(2) + "MXN";
       document.getElementById("labelCotizacion").style.display = "block";
 
       document.getElementById("txtPorcentajeSeguro").readOnly = false;
@@ -64,6 +64,7 @@ function calcularPorcentajeSeguro() {
     }
   }
 }
+
 
 
 

@@ -11,12 +11,12 @@
                 ingresaste existe.
                 <br>
                 Favor de seguir los siguientes pasos:
-                <ol>
+            <ol>
                 <li>Abre tu Correo Electrónico</li>
                 <li>Haz clic en el enlace</li>
                 <li>Ingresa tu código de autenticación que te enviamos</li>
                 <li>Ingresalo en la ventana que te llevará el enlace</li>
-                <li>Y listo, ahora puedes Iniciar Sesión en Control de Compras</li>
+                <li>Y listo, ahora puedes Iniciar Sesión en Jaguarpack</li>
             </ol>
             </p>
             <hr>

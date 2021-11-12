@@ -7,7 +7,7 @@
     <meta name="keywords" content="Compras express, entregas, rapido">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="shortcut icon" />
+    <link href="../img/favicon.ico" rel="shortcut icon" />
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <!-- Stylesheets -->
@@ -26,7 +26,7 @@
                 <img src="../img/logo-blanco.png" alt="" id="logotipo">
             </a>
             <div class="responsive-bar-sistema"><i class="fa fa-bars"></i></div>
-            <nav class="main-menu-sistema">
+            <nav class="main-menu">
                 <ul class="menu-sistema">
                     <li class="nav-item dropdown">
                         <a class="dark nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"

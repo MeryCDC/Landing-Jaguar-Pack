@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="description" content="Jaguarpack Compras express">
     <meta name="keywords" content="Compras express, entregas, rapido">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="shortcut icon" />
 
@@ -20,6 +20,12 @@
     <link rel="stylesheet" href="css/animate.css" />
     <link rel="stylesheet" href="css/owl.carousel.css" />
     <link rel="stylesheet" href="css/style.css" />
+
+
+    <!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
 
 </head>
 
@@ -46,10 +52,11 @@
     </header>
     <!-- Header section end -->
 
+
     <!-- Inicio section -->
     <section class="hero-section" id="inicio">
         <div class="container">
-            <div class="row">
+            <div class="row"> 
                 <div class="col-md-6 hero-text">
                     <h1>Adquiere en E.U </h1>
                     <h2 class="degradado">Recibe en NLD y CDMX</h2>
@@ -60,17 +67,17 @@
                     </form>
                 </div>
                 <div class="col-md-6">
-                </div>
+				<!-- 	<img src="img/laptop.png" class="laptop-image" alt=""> -->
+				</div> 
             </div>
         </div>
     </section>
     <!-- Inicio section end -->
-
+    
     <!-- Cotizador -->
     <section class="about-section spad" id="cotiza">
         <div class="container">
             <div class="row">
-                <br>
                 <div class="col-lg-6 ">
                     <div class="single-blog-page blog-text">
                         <blockquote>
@@ -92,36 +99,35 @@
                                     envío se te cobrara un 5% del valor del producto.</p>
                             </li>
                         </ul>
+                        
+                        <br>
                     </div>
 
                 </div>
                 <div class="col-lg-6 ">
-                    <div class="widget-area">
+                    <div class="widget-area">    
                         <h2 class="degradado">Cotiza tu envio</h2>
-                        <p>Ingresa los datos respectivos de tu paquete y así obten un aproximado de cuánto te costará el
-                            envío.</p>
-                        <p>Ingresa el peso en <b>libras</b> y valor en <b>dolares</b> del producto de tu compra.</p>
+                        <p>Ingresa los datos respectivos de tu paquete y así obten un aproximado de cuánto te costará el envío.</p>
                         <form class="contact-form" id="cotizador" method="post">
-                            <input type="number" name="peso" id="peso" required="" step="any"
-                                placeholder="Ingresa el peso en lbs">
-                            <input type="number" name="valor" id="valor" required="" step="any"
-                                placeholder="Ingresa el valor en dolares">
+                            <label for="">Ingresa el peso en <b>libras</b></label>
+                            <input type="number" name="peso" id="peso" required="" step="any" placeholder="0 lbs">
+                            <label for="">Ingresa el valor en <b>dolares</b></label>
+                            <label for=""></label>
+                            <input type="number" name="valor" id="valor" required="" step="any" placeholder="0 dlls">
                             <div class="contact-type">
-                                <label class="ct-label">Asegurar envio
-                                    <input type="checkbox" name="seguro" id="seguro">
-                                    <span class="checkmark"></span>
-                                </label>
-                            </div>
+									<label class="ct-label">Asegurar envio
+                                        <input type="checkbox" name="seguro" id="seguro">
+										 <span class="checkmark"></span>
+									</label>
+								</div>
                             <!-- <input type="text" placeholder="Enter your email"> -->
                             <button class="site-btn sb-full-- sb-gradients" type="submit">Cotiza</button>
                             <!-- <input value="Cotizar" class="register-submit" id="cotizador" type="button" onclick="cotizacion()"> -->
-
+                            
                             <div class="card-body" id="mostrarTotal" style="display: none;">
-                                <h4 id="total" class="degradado">El costo aproximado de su envío será de $200 MXN. (No
-                                    incluye seguro)</h4>
+                                <h4 id="total" class="degradado">El costo aproximado de su envío será de $200 MXN. (No incluye seguro)</h4>
                                 <!-- <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5> -->
-                                <p>El costo de su paquete puede variar si el peso no coincide con los datos antes
-                                    proporcionados.</p>
+                                <p>El costo de envio de su paquete puede variar si el peso no coincide con los datos antes proporcionados.</p>
                             </div>
                         </form>
                     </div>
@@ -130,45 +136,8 @@
         </div>
     </section>
     <!-- Final cotizador -->
-
-    <!-- Cobertura -->
-    <!--     <section class="features-section spad gradient-bg">
-        <div class="container text-white">
-            <div class="section-title">
-                <h2>Cobertura del servicio</h2>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-12 feature">
-                    <i class="imagen"> <img src="img/garras.png" alt=""></i>
-                    <div class="col-lg-6 feature-content">
-                        <h4>Servicio de $200 MXN. <br> Ampara hasta 3 lbs. Artículos menores a un valor de $100 USD</h4>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-12 feature">
-                    <i class="imagen"> <img src="img/garras.png" alt=""></i>
-                    <div class="col-lg-6 feature-content">
-                        <h4>Artículos mayores de 3 lbs, se cobra un excedente de $75 MXN x libra.</h4>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-12 feature">
-                    <i class="imagen"> <img src="img/garras.png" alt=""></i>
-                    <div class="col-lg-6 feature-content">
-                        <h4>Artículos con un valor mayor a $100 USD, se cobra un interés del 16%.</h4>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-12 feature">
-                    <i class="imagen"> <img src="img/garras.png" alt=""></i>
-                    <div class="col-lg-6 feature-content">
-                        <h4>Un seguro del 5% del valor asegurado.</h4>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section> -->
-    <!-- Final Cobertura -->
-
-    <!-- Cobertura -->
+    
+        <!-- Cobertura -->
     <section class="features-section spad gradient-bg">
         <div class="container text-white">
             <div class="section-title text-center">
@@ -272,7 +241,7 @@
         </div>
     </section>
      <!-- Final Cobertura -->
-
+    
     <!-- ¿Como funciona? -->
     <section class="blog-section spad" id="funcionamiento">
         <div class="container">
@@ -286,11 +255,10 @@
                         <figure class="blog-thumb">
                             <img src="img\JP-INFO-1.png" alt="">
                         </figure>
-
+                        
                         <div class="blog-text">
                             <h5 class="blog-title"> 1. Regístrate en JaguarPack y obtén tu dirección en USA.</h5>
-                            <p>Esta será su dirección dentro de los Estados Unidos. <br> Tenerla no le generará tarifas
-                                ni cargos. <br> <br></p>
+                            <p>Esta será su dirección dentro de los Estados Unidos. <br> Tenerla no le generará tarifas ni cargos. <br> <br></p>
                         </div>
                     </div>
                 </div>
@@ -304,8 +272,7 @@
                             <!-- <div class="post-date">28 dec 2018</div> -->
                             <h5 class="blog-title">2. Compre en cualquier tienda de USA. Y envíela a su nueva dirección
                                 de USA.</h5>
-                            <p>Utilice la dirección que le proporcionamos para recibir sus compras en nuestra bodega en
-                                USA.</p>
+                            <p>Utilice la dirección que le proporcionamos para recibir sus compras en nuestra bodega en USA.</p>
                         </div>
                     </div>
                 </div>
@@ -318,8 +285,7 @@
                         <div class="blog-text">
                             <!-- <div class="post-date">28 aug 2018</div> -->
                             <h5 class="blog-title">3. Rastrea y recibe tu pedido.</h5>
-                            <p>Puedes rastrear tu pedido desde tu cuenta de JaguarPack, te dirá el último estatus de tu
-                                paquete. <br> <br> </p>
+                            <p>Puedes rastrear tu pedido desde tu cuenta de JaguarPack, te dirá el último estatus de tu paquete. <br> <br> </p>
                         </div>
                     </div>
                 </div>
@@ -356,8 +322,8 @@
             </div>
         </div>
     </section>
-    <!-- Final experiencia -->
-
+    <!-- Experiencia -->
+    
     <!-- Sobre nosotros -->
     <section class="about-section spad" id="acerca">
         <div class="container">
@@ -365,12 +331,9 @@
                 <div class="col-lg-6 offset-lg-6 about-text">
                     <h2 class="degradado">Compras rapidas, entregas rapidas</h2>
                     <!-- <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5> -->
-                    <p>Somos un servicio de almacenamiento y envío de compras a bajo costo, hacemos el puente para que
-                        puedas comprar
-                        tus productos en tiendas online en EU, enviar a tu dirección en EU, almacenarla y despacharla
-                        hasta tu hogar.</p>
-                    <a href="https://www.jaguarpack.com/app/registro.php"
-                        class="site-btn sb-gradients sbg-line mt-5">Registrate</a>
+                    <p>Somos un servicio de almacenamiento y envío de compras a bajo costo, hacemos el puente para que puedas comprar 
+                        tus productos en tiendas online en EU, enviar a tu dirección en EU, almacenarla y despacharla hasta tu hogar.</p>
+                    <a href="https://www.jaguarpack.com/app/registro.php" class="site-btn sb-gradients">Registrate</a>
                 </div>
             </div>
             <div class="about-img">
@@ -378,14 +341,14 @@
             </div>
         </div>
     </section>
-    <!-- Final Sobre nosotros -->
+     <!-- Final Sobre nosotros -->
 
     <!-- Newsletter section -->
     <section class="newsletter-section gradient-bg">
         <div class="container text-white">
             <div class="row">
                 <div class="col-lg-7 newsletter-text">
-                    <h2>Suscríbete a nuestro boletín</h2>
+                    <h2>Suscríbete  a nuestro boletín</h2>
                     <p>Recibe noticias y nuevas ofertas continuamente.</p>
                 </div>
                 <div class="col-lg-5 col-md-8 offset-lg-0 offset-md-2">
@@ -413,15 +376,13 @@
                     <ul>
                         <li><a href="mailto:contacto@jaguarpack.com"><b>Correo: </b>contacto@jaguarpack.com</a></li>
                         <li><a href="tel:8677141102"><b>Teléfono: </b>867 714 1102</a></li>
-                        <li><a href="https://goo.gl/maps/Z33wVpzHs9b5e5f89"><b>Dirección: </b>Aldama 2103, Juárez, 88209
-                                Nuevo Laredo, Tamps.</span>.com</a></li>
+                        <li><a href="https://goo.gl/maps/Z33wVpzHs9b5e5f89"><b>Dirección: </b>Aldama 2103, Juárez, 88209 Nuevo Laredo, Tamps.</a></li>
                     </ul>
                 </div>
                 <div class="col-md-6 col-lg-4 footer-widget pl-lg-5 pl-3">
                     <h5 class="widget-title">Siguenos en redes sociales</h5>
                     <div class="social">
-                        <a href="https://www.facebook.com/JaguarPack-109423444837073/" class="facebook"><i
-                                class="fa fa-facebook"></i></a>
+                        <a href="https://www.facebook.com/JaguarPack-109423444837073/" class="facebook"><i class="fa fa-facebook"></i></a>
                         <!-- <a href="" class="instagram"><i class="fa fa-instagram"></i></a> -->
 
                     </div>
@@ -430,13 +391,10 @@
             <div class="footer-bottom">
                 <div class="row">
                     <div class="col-lg-8 store-links text-center text-lg-left pb-3 pb-lg-0">
-                        <a>Conoce nuestros otros servicios</a> <br>
-                        <a href="https://www.controldecarga.com/" target="_blank"><img src="img/LOGOCDC.png" alt=""
-                                width="50" height="50"></a>
-                        <a href="https://controldecompras.com.mx/" target="_blank"><img src="img/LOGOCOMPRAS.png" alt=""
-                                width="50" height="50"></a>
-                        <a href="https://www.rapicarga.mx/" target="_blank"><img src="img/LOGORAPI.png" alt=""
-                                width="50" height="50"></a>
+                        <a>Conoce nuestros otros servicios: </a> <br>
+                        <a href="https://www.controldecarga.com/" target="_blank"><img src="img/LOGOCDC.png" alt="" width="50" height="50"></a>
+                        <a href="https://controldecompras.com.mx/" target="_blank"><img src="img/LOGOCOMPRAS.png" alt="" width="50" height="50"></a> 
+                        <a href="https://www.rapicarga.mx/" target="_blank"><img src="img/LOGORAPI.png" alt="" width="50" height="50"></a> 
                     </div>
                     <div class="col-lg-4 text-center text-lg-right">
                         <ul class="footer-nav">

@@ -23,13 +23,6 @@ $mensaje = '
     href="https://www.jaguarpack.com/app/confirm.php?email='.$email.'">
     Haz clic aqui para validar tu cuenta</a>  
   </p>
-
-  <p>
-  <a
-  href="http://localhost/Landing-Jaguar-Pack/app/confirm.php?email='.$email.'">
-  Haz clic aqui para validar tu cuenta en local</a>  
-</p>
-
   <h2> '. $codigo_auth .' </h2>
   
   <hr>

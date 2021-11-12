@@ -48,3 +48,8 @@
 [15-Oct-2021 11:04:47 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/contrpd3/public_html/controldecompras/compras/php/logout.php on line 17
 [15-Oct-2021 11:56:59 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/contrpd3/public_html/controldecompras/compras/php/logout.php on line 17
 [20-Oct-2021 11:39:15 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/contrpd3/public_html/controldecompras/compras/php/logout.php on line 17
+[22-Oct-2021 10:05:34 America/Boise] PHP Warning:  mysqli::__construct(): (HY000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home4/contrpd3/public_html/jaguarpack/app/php/conexion.php on line 2
+[22-Oct-2021 10:15:20 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/contrpd3/public_html/jaguarpack/app/php/logout.php on line 17
+[22-Oct-2021 10:19:08 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/contrpd3/public_html/jaguarpack/app/php/logout.php on line 17
+[27-Oct-2021 11:37:12 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/contrpd3/public_html/jaguarpack/app/php/logout.php on line 17
+[01-Nov-2021 08:47:52 America/Boise] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home4/contrpd3/public_html/jaguarpack/app/php/logout.php on line 17

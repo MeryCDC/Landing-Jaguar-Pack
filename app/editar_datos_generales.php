@@ -70,7 +70,7 @@ echo '
     <meta name="keywords" content="Compras express, entregas, rapido">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="shortcut icon" />
+    <link href="../img/favicon.ico" rel="shortcut icon" />
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <!-- Stylesheets -->
@@ -158,7 +158,7 @@ echo '
                 </div>
 
                 <div class="col-md-6 mb-3">
-                  <label for="apellido">Teléfono Secundario * </label>
+                  <label for="apellido">Teléfono Secundario</label>
                   <input type="text" class="form-control" id="txtTelefonoAuxiliar" name="txtTelefonoAuxiliar"
                     placeholder="+52 (867) 124 8752" value="'. $telefono_aux_cliente .'">
 

@@ -13,13 +13,13 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
-    <!-- Stylesheets -->
-    <link rel="stylesheet" href="../css/bootstrap.min.css" />
-    <link rel="stylesheet" href="../css/font-awesome.min.css" />
-    <link rel="stylesheet" href="../css/themify-icons.css" />
-    <link rel="stylesheet" href="../css/animate.css" />
-    <link rel="stylesheet" href="../css/owl.carousel.css" />
-    <link rel="stylesheet" href="../css/style.css" />
+   <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://www.jaguarpack.com/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://www.jaguarpack.com/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://www.jaguarpack.com/css/themify-icons.css" />
+    <link rel="stylesheet" href="https://www.jaguarpack.com/css/animate.css" />
+    <link rel="stylesheet" href="https://www.jaguarpack.com/css/owl.carousel.css" />
+    <link rel="stylesheet" href="https://www.jaguarpack.com/css/style.css" />
 
 </head>
 
@@ -28,7 +28,7 @@
     <header class="header-section clearfix sticky" id="menu">
         <div class="container-fluid">
             <a href="index.html" class="logosticky" id="logo">
-                <img src="../img/logo-blanco.png" alt="" id="logotipo">
+                <img src="https://jaguarpack.com/img/logo-blanco.png" alt="" id="logotipo">
             </a>
             <div class="responsive-bar"><i class="fa fa-bars"></i></div>
             <a href="" class="user"><i class="fa fa-user"></i></a>

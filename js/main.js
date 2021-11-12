@@ -9,21 +9,21 @@
 'use strict';
 
 
-$(window).on('load', function () {
+$(window).on('load', function() {
 	/*------------------
 		Preloder
 	--------------------*/
-	$(".loader").fadeOut();
+	$(".loader").fadeOut(); 
 	$("#preloder").delay(400).fadeOut("slow");
 
 });
 
-(function ($) {
+(function($) {
 
 	/*------------------
 		Navigation
 	--------------------*/
-	$('.responsive-bar').on('click', function (event) {
+	$('.responsive-bar').on('click', function(event) {
 		$('.main-menu').slideToggle(400);
 		event.preventDefault();
 	});
@@ -32,20 +32,20 @@ $(window).on('load', function () {
 	/*------------------
 		Background set
 	--------------------*/
-	$('.set-bg').each(function () {
+	$('.set-bg').each(function() {
 		var bg = $(this).data('setbg');
 		$(this).css('background-image', 'url(' + bg + ')');
 	});
 
-
+	
 	/*------------------
 		Review
 	--------------------*/
 	var review_meta = $(".review-meta-slider");
-	var review_text = $(".review-text-slider");
+    var review_text = $(".review-text-slider");
 
 
-	review_text.on('changed.owl.carousel', function (event) {
+    review_text.on('changed.owl.carousel', function(event) {
 		review_meta.trigger('next.owl.carousel');
 	});
 
@@ -70,55 +70,53 @@ $(window).on('load', function () {
 		autoplay: true,
 		navText: ['<i class="ti-angle-left"><i>', '<i class="ti-angle-right"><i>'],
 		animateOut: 'fadeOutDown',
-		animateIn: 'fadeInDown',
+    	animateIn: 'fadeInDown',
 	});
 
 
 
-	/*------------------
-	   Contact Form
-   --------------------*/
-	$(".check-form").focus(function () {
-		$(this).next("span").addClass("active");
-	});
-	$(".check-form").blur(function () {
-		if ($(this).val() === "") {
-			$(this).next("span").removeClass("active");
-		}
-	});
+	 /*------------------
+		Contact Form
+	--------------------*/
+    $(".check-form").focus(function () {
+        $(this).next("span").addClass("active");
+    });
+    $(".check-form").blur(function () {
+        if ($(this).val() === "") {
+            $(this).next("span").removeClass("active");
+        }
+    });
 
 
 })(jQuery);
 
-$(document).ready(function () {
-	var $cabecera = $('#menu');
+$(document).ready(function(){
+    var $cabecera = $('#menu');
 	var $imagen = $('#logo');
-	var $responsive = $('#bar');
-	var previousScroll = 0;
-	$(window).scroll(function (event) {
-		var scroll = $(this).scrollTop();
-		if (scroll > 0) {
-			$cabecera.addClass('sticky');
-			$imagen.removeClass('logo');
-			$imagen.addClass('logosticky');
-			$("#logotipo").attr("src", "img/logo-blanco.png");
+    var previousScroll = 0;
+    $(window).scroll(function(event){
+       var scroll = $(this).scrollTop();
+       if (scroll > 0){
+           $cabecera.addClass('sticky');
+		   $imagen.removeClass('logo');
+		   $imagen.addClass('logosticky');
+		   $("#logotipo").attr("src","img/logo-blanco.png");
 
-		} else {
-			$cabecera.removeClass('sticky');
-			$imagen.removeClass('logosticky');
-			$imagen.addClass('logo');
-			$("#logotipo").attr("src", "img/logo2.png");
-		}
-		previousScroll = scroll;
-	});
-});
-
+       } else {
+           $cabecera.removeClass('sticky');
+		   $imagen.removeClass('logosticky');
+		   $imagen.addClass('logo');
+		   $("#logotipo").attr("src","img/logo2.png");
+       }
+       previousScroll = scroll;    });
+ 
+  });
+  
 /* =================================
 ------------------------------------
 	Cotizador
  ------------------------------------ 
  ====================================*/
-
 $(document).ready(function () {
 	$('#cotizador').submit(function (e) {
 		e.preventDefault();
@@ -140,7 +138,7 @@ $(document).ready(function () {
 
 		/* Peso menor a 3 libras y valor menor a 100 dlls */
 		if (peso <= 3 && valorDlls <= 100) {
-			if (chkSeguro == true) {
+			if(chkSeguro == true){
 				seguro = valorMxn * 0.05;
 				TotalFinal = TotalFinal + seguro;
 				document.getElementById("total").innerHTML = "El costo aproximado de su envío será de $" + TotalFinal.toFixed(2) + " MXN. (Con seguro incluido)";
@@ -231,7 +229,7 @@ $(document).ready(function () {
 				$.each(dataj, function (i, item) {
 					switch (item.estatus) {
 						case '0':
-							estatus = "Pre-Alerta";
+							estatus = "Pre-Alerta creada por el usuario";
 							break;
 						case '1':
 							estatus = "Ingreso a Bodega NLD";
@@ -252,7 +250,6 @@ $(document).ready(function () {
 						'<tr>' +
 						'<td style="text-align: left; font-size:14px">' + item.hora_estatus + '</td>' +
 						'<td style="text-align: left; font-size:14px">' + estatus + '</td>' +
-						'<td style="text-align: left; font-size:14px">' + item.comentario + ' </td>' +
 						'</tr>'
 				});
 				Swal.fire({
@@ -265,7 +262,6 @@ $(document).ready(function () {
 						'<tr>' +
 						'<th style="text-align: left; font-size:16px">Fecha</th>' +
 						'<th style="text-align: left; font-size:16px">Estatus</th>' +
-						'<th style="text-align: left; font-size:16px">Comentario</th>' +
 						'</tr>' +
 						'</thead>' +
 						'<tbody>' +
@@ -285,3 +281,4 @@ $(document).ready(function () {
 		})
 	})
 });
+

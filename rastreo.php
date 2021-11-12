@@ -1,11 +1,15 @@
 <?php
 define('DB_HOST_JP','localhost'); 
-define('DB_USER_JP','root');
-define('DB_PASS_JP','');
-define('DB_NAME_JP','control_jaguar');
+define('DB_USER_JP','contrpd3_control_jaguar');
+define('DB_PASS_JP','J4Gu4RP4ck*');
+define('DB_NAME_JP','contrpd3_control_jaguar');
+
+ //$conexion = new mysqli('localhost','contrpd3_control_jaguar','J4Gu4RP4ck*','contrpd3_control_jaguar');
  
+// Ahora, establecemos la conexi贸n.
 try
 {
+    // Ejecutamos las variables y aplicamos UTF8
     $connect_jp = new PDO("mysql:host=".DB_HOST_JP.";dbname=".DB_NAME_JP ,DB_USER_JP , DB_PASS_JP, array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'utf8'"));
 }
 catch (PDOException $e)

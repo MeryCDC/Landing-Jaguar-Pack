@@ -11,8 +11,9 @@
 
 <?php $Usuario = $_SESSION['email'] ?>
 <?php $title = "Creación de Pre-Alerta - jaguarPack"; ?>
+
 <?php require_once "layout/header.php" ?>
-    
+ <link href="../img/favicon.ico" rel="shortcut icon" />    
 <section class="about-section spansistema">
     <div class="container">
         <div class="row">
@@ -44,7 +45,7 @@
                                     <div class="invalid-feedback">No deje el campo "Valor del Producto" vacío.</div>
                                 </div>
                             </div>
-                            <div class="form-row">
+                             <div class="form-row">
                                 <div class="col-md-4 mb-3">
                                     <label for="txtAlto">Alto en Pulgadas (in)</label>
                                     <input type="text" class="form-control" id="txtAlto" name="txtAlto"

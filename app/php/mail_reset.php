@@ -29,13 +29,6 @@ $mensaje = '
     Para restablecer haz clic aqui</a>  
   </p>
 
-  <p>
-    <a
-    href="http://localhost/Landing-Jaguar-Pack/app/reset.php?email='.$email.'&token='.$token.'">
-    Para restablecer haz clic aqui</a>  
-  </p>
-
-
 </body>
 </html>
 ';
