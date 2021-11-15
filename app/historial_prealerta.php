@@ -53,7 +53,6 @@
                                 <td> <?php echo $obj_prealerta->tracking ?> </td>
                                 <?php if($obj_prealerta->status == 0) {?>
                                     <td class="status"><span class="danger">Pendiente</span></td>
-                               <!--  <td> Pendiente </td> -->
                                 <?php } ?>
                                 <?php if($obj_prealerta->status == 1) {?>
                                     <td class="status"><span class="active">Entregado</span></td>

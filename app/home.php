@@ -6,6 +6,17 @@
 <!-- Contenido -->
 <section class="about-section spansistema">
 <div class="container">
+    <?php if (isset($_SESSION['mensaje'])) { ?>
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <strong><?php echo $_SESSION['mensaje'] ?></strong>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    <?php } 
+        unset($_SESSION['mensaje']); 
+    ?>
+
     <?php if($confirmar_datos_usuario > 0): ?> 
     <div class="small-container3 center-block">
         <div class="card text-dark bg-light mb-3 ">

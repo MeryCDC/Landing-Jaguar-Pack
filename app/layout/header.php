@@ -9,7 +9,7 @@
     <!-- Favicon -->
     <link href="../img/favicon.ico" rel="shortcut icon" />
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet"> 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="../css/bootstrap.min.css" />
     <link rel="stylesheet" href="../css/font-awesome.min.css" />

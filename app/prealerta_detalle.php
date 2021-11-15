@@ -8,7 +8,6 @@
 <!-- Contenido -->
 <section class="about-section spansistema">
     <div class="container">
-
         <?php 
         if (isset($_SESSION['comprobante'])) { ?>
         <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -51,7 +50,6 @@
                             </div>
                             <button type="submit" class="btn btn-success" name="upload">Subir Imágen</button>
                         </form>
-
                     </div>
                 </div>
                 <div class="col">
@@ -86,6 +84,7 @@
                 </a>
             </div>
         </div>
-        <div>
+    </div>
+</section>
 <!-- Final del Contenido -->
 <?php require_once "layout/footer.php" ?>

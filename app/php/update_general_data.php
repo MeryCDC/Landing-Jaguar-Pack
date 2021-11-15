@@ -6,9 +6,7 @@
        isset($_POST['txtTelefonoAuxiliar']) && isset($_POST['txtCalle']) && isset($_POST['txtColonia']) && isset($_POST['txtNumExterior']) && 
        isset($_POST['txtNumeroInterior']) && isset($_POST['txtEntreCalles']) && isset($_POST['txtEstado']) && 
        isset($_POST['txtCiudad']) && isset($_POST['txtCodigoPostal']) && isset($_POST['txtReferencias'])
-      )
-
-      {
+      ){
           $nombres = $_POST['txtNombres'];
           $apellidos = $_POST['txtApellidos'];
           $telefono = $_POST['txtTelefono'];
@@ -25,12 +23,10 @@
 
           session_start();
           $email_sesion = $_SESSION['email'];
-          //echo $email_sesion;
-
+          //echo $email_sesion; 
           $result = $conexion->query("select id from usuarios where email='$email_sesion'");
           $obj = $result->fetch_object();
           $id_usuario = $obj->id;
-
 
           $conexion->query("update clientes set nombres = '$nombres' , apellidos = '$apellidos', calle = '$calle' , numero_exterior='$numero_ext' , numero_interior='$numero_int' , entre_calles='$entre_calles',
           colonia='$colonia', codigo_postal='$codigo_postal' , estado='$estado' , ciudad='$ciudad' , telefono='$telefono' , referencias='$referencias', telefono_auxiliar='$telefono_aux' where id_usuario='$id_usuario'  ")or die($conexion->error);
@@ -40,9 +36,7 @@
           $obj_query_cliente = $resultado_query_cliente->fetch_object();
           $id_query_cliente = $obj_query_cliente->id;
 
-
-
-            #Se capturan los datos que está enviando el usuario sobre el (Domicilio Auxiliar 2)
+          #Se capturan los datos que está enviando el usuario sobre el (Domicilio Auxiliar 2)
           $calle2 = $_POST['txtCalle2'];
           $colonia2 = $_POST['txtColonia2'];
           $numero_ext2 = $_POST['txtNumExterior2'];
@@ -54,12 +48,10 @@
           $referencias2 = $_POST['txtReferencias2'];
 
           #Se hace la actualización en la base de datos
-
           $conexion->query("update domicilios set calle = '$calle2' , numero_exterior='$numero_ext2' , numero_interior='$numero_int2' , entre_calles='$entre_calles2',
           colonia='$colonia2', codigo_postal='$codigo_postal2' , estado='$estado2' , ciudad='$ciudad2' , referencias='$referencias2' where id_cliente='$id_query_cliente' and num_domicilio=2  ")or die($conexion->error);
 
-
-        #Se capturan los datos que está enviando el usuario sobre el (Domicilio Auxiliar 3)
+          #Se capturan los datos que está enviando el usuario sobre el (Domicilio Auxiliar 3)
           $calle3 = $_POST['txtCalle3'];
           $colonia3 = $_POST['txtColonia3'];
           $numero_ext3 = $_POST['txtNumExterior3'];
@@ -73,10 +65,9 @@
           #Se hace la actualización en la base de datos
           $conexion->query("update domicilios set calle = '$calle3' , numero_exterior='$numero_ext3' , numero_interior='$numero_int3' , entre_calles='$entre_calles3',
           colonia='$colonia3', codigo_postal='$codigo_postal3' , estado='$estado3' , ciudad='$ciudad3' , referencias='$referencias3' where id_cliente='$id_query_cliente' and num_domicilio=3  ")or die($conexion->error);
-
-
          //$conexion->query("update usuarios set confirmar_datos = 1 where email='$email_sesion'");
-
+         session_start();
+         $_SESSION['mensaje']="¡Datos guardados correctamente!";
          header('location: ../home.php');
 
       }

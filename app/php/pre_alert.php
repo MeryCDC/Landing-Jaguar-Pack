@@ -39,6 +39,8 @@ if(isset($_POST['txtPeso']) && isset($_POST['txtvalor']) && isset($_POST['txtAlt
 
            //$sql = "INSERT INTO `estatus` (`id`, `estatus`, `comentario`, `fecha_hora`, `id_prealerta`, `id_usuario`) VALUES (NULL, \'0\', NULL, current_timestamp(), \'28\', \'2\')";
 
+           session_start();
+           $_SESSION['mensaje']="¡Prealerta generada correctamente!";
            header('location: home.php');
        } else {
            $resultado_seguro = 0;
@@ -51,8 +53,9 @@ if(isset($_POST['txtPeso']) && isset($_POST['txtvalor']) && isset($_POST['txtAlt
 
             $conexion->query("insert into estatus (estatus, comentario, id_prealerta)
             values(0, 'Creada por el usuario', ' $ultimo') ")or die($conexion->error);
-
-            //$sql = "INSERT INTO `estatus` (`id`, `estatus`, `comentario`, `fecha_hora`, `id_prealerta`, `id_usuario`) VALUES (NULL, \'0\', NULL, current_timestamp(), \'28\', \'2\')";
+            
+            session_start();
+            $_SESSION['mensaje']="¡Prealerta generada correctamente!";
             header('location: home.php');
        }
        header('location: ../home.php');
